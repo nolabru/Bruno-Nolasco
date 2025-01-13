@@ -917,11 +917,6 @@ footer>.navbar {
 }
 
 @media(430px >=width) {
-
-    .quadrado.um {
-        width: 11000px;
-    }
-
     #sobreMim h1 {
         font-size: 40px;
     }
