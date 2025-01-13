@@ -35,6 +35,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -886,6 +887,15 @@ footer>.navbar {
 
     #copyr{
         padding: 20px 0;
+        flex-direction: column;
+    }
+
+    #copyr > #logo{
+        display: none;
+    }
+
+    #copyr > p{
+        margin-top: 10px;
     }
 
     .navbar.footer{
