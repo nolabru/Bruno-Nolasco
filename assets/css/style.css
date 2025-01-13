@@ -1,0 +1,950 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --corPrincipal: #5BA37B;
+    --corQuadrados: #181818;
+    --corDetalhes: #1e1e1e;
+    --corTexto: #A8A8A8;
+    --corFundo: #111111;
+    --corTitulos: #fff;
+    --fontePrincipal: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--fontePrincipal);
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    background: var(--corFundo);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(to bottom, transparent, var(--corPrincipal));
+}
+
+/* ------------------------------------------------------------------------------ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--corFundo);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quadrado {
+    background: var(--corQuadrados);
+}
+
+.buttonUp {
+    width: 60px;
+    height: 60px;
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+    transition: all 1s;
+    opacity: 0;
+    z-index: 1000;
+    background: var(--corDetalhes);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.buttonUp.active {
+    opacity: 1;
+}
+
+.buttonUp>img {
+    width: 50%;
+}
+
+.buttonUp:hover {
+    transform: translateY(-10px);
+}
+
+/* ------------------------------------------------------------------------------ */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px;
+    width: 935px;
+}
+
+#logo img {
+    width: 55px;
+    height: 43px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar li {
+    padding: 0px 24px;
+}
+
+.navbar li a {
+    position: relative;
+    font-size: 14px;
+    font-weight: 300;
+    transition: all .5s ease-in-out;
+    color: var(--corTexto);
+}
+
+.navbar li a:hover {
+    color: #fff;
+}
+
+.navbar li a::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(270deg, var(--corPrincipal) 0%, var(--corFundo) 100%);
+    transition: all .5s cubic-bezier(0.86, 0, 0.07, 1);
+    width: 80%;
+    transform-origin: bottom left;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+}
+
+.navbar li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* ------------------------------------------------------------------------------ */
+
+#apresentacao {
+    margin-top: 40px;
+    display: flex;
+    width: 935px;
+    padding: 0 30px;
+}
+
+#photoPrincipal {
+    width: 354px;
+    height: 462px;
+    background: url(images/bruno.png);
+    background-position: top;
+    background-size: cover;
+    filter: saturate(0%);
+    box-shadow: inset 0px -3px 9px 8px var(--corFundo)
+}
+
+#sobreMim {
+    display: flex;
+    align-items: center;
+    width: 580px;
+    height: 462px;
+}
+
+#sobreMim div {
+    padding: 0px 30px 0px 50px;
+}
+
+#sobreMim h1,
+h2,
+h3 {
+    font-weight: 400;
+    color: var(--corPrincipal);
+}
+
+#sobreMim h1 {
+    font-size: 64px;
+    color: var(--corTitulos);
+    margin: -10px 0 -10px -3px;
+}
+
+#sobreMim h2 {
+    font-size: 26px;
+}
+
+#sobreMim h3 {
+    font-size: 22px;
+}
+
+#sobreMim p {
+    font-size: 14px;
+    text-align: justify;
+    margin: 15px 0px;
+    color: var(--corTexto);
+}
+
+.button {
+    padding: 3px 20px;
+    background: var(--corQuadrados);
+    border: 1px solid var(--corDetalhes);
+    color: var(--corPrincipal);
+    font-size: 13px;
+    position: relative;
+}
+
+.button::after,
+.button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    transition: transform .3s cubic-bezier(0.86, 0, 0.07, 1);
+    transform: scaleX(0);
+}
+
+.button::after {
+    transform-origin: bottom right;
+    bottom: 0;
+    background: linear-gradient(270deg, var(--corPrincipal) 0%, var(--corFundo) 90%);
+}
+
+.button::before {
+    transform-origin: bottom left;
+    background: linear-gradient(90deg, var(--corPrincipal) 0%, var(--corFundo) 50%);
+}
+
+.button:hover::after,
+.button:hover::before {
+    transform: scaleX(1);
+}
+
+.button:hover::after {
+    transform-origin: bottom left;
+}
+
+.button:hover::before {
+    transform-origin: bottom right;
+}
+
+.quadrado.um {
+    width: 9973px;
+    height: 700px;
+    position: relative;
+    left: -5000px;
+    z-index: -1000;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+#servicos {
+    display: flex;
+    flex-direction: column;
+    margin-top: -580px;
+    width: 935px;
+    scroll-margin-top: 130px;
+    padding: 0 30px;
+}
+
+.tituloSecao {
+    font-size: 26px;
+    letter-spacing: 2px;
+    color: var(--corTitulos);
+    font-weight: bolder;
+}
+
+.subtituloSecao {
+    font-size: 15px;
+    color: var(--corTexto);
+    font-weight: 300;
+}
+
+#servicosEspecificacoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardServicos {
+    background: var(--corDetalhes);
+    width: 305px;
+    height: 260px;
+    margin-top: 30px;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cardSecundario {
+    background: var(--corDetalhes);
+    width: 305px;
+    height: 100px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.imgCard {
+    width: 55px;
+}
+
+.tituloCard {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--corTitulos);
+}
+
+.descricaoCard {
+    font-size: 12px;
+    color: var(--corTexto);
+    text-align: justify;
+}
+
+.numeroCard {
+    color: var(--corPrincipal);
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.descricaoCardSecundario {
+    color: var(--corTexto);
+    font-size: 14px;
+}
+
+.green {
+    background: var(--corPrincipal);
+    color: var(--corTitulos);
+}
+
+/* ------------------------------------------------------------------------------ */
+
+#projetos {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-margin-top: 40px;
+}
+
+#introProjetos {
+    width: 935px;
+    z-index: 1;
+}
+
+#sliderProjetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projetosPrincipal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 935px;
+    opacity: 1;
+    transition: all 1s;
+}
+
+.projetosPrincipal.dois {
+    opacity: 0;
+    position: absolute;
+    transform: translateY(150%);
+}
+
+.projetosPrincipal.active {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.projetosPrincipal.dois.active {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+.imgSeta {
+    width: 40px;
+    height: 40px;
+    margin: 0 50px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.imgSeta.esquerda {
+    transform: rotate(270deg);
+}
+
+.imgSeta.direita {
+    transform: rotate(90deg);
+}
+
+.cardProjetos {
+    margin-bottom: 30px;
+}
+
+.bgProjetos {
+    background: var(--corDetalhes);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    padding: 40px 30px;
+}
+
+.boxImg {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.boxImg::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to top, #090909, transparent);
+    width: 100%;
+    height: 0;
+    transition: all .4s;
+    backdrop-filter: blur(2px);
+}
+
+.boxImg:hover::before {
+    height: 100%;
+}
+
+.repProjetos {
+    position: absolute;
+    opacity: 0;
+    color: var(--corTitulos);
+    font-size: 13px;
+    background: var(--corPrincipal);
+    padding: 5px 17px;
+    transition: all .5;
+}
+
+.repProjetos:hover {
+    transform: translateY(-5px);
+}
+
+.boxImg:hover a {
+    opacity: 1;
+    transition: all 1s;
+}
+
+.imgProjeto {
+    width: 100%;
+}
+
+.tituloPadrao {
+    color: var(--corTitulos);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.descricaoPadrao {
+    color: var(--corTexto);
+    font-size: 13px;
+    text-align: justify;
+}
+
+.explicacaoPadrao {
+    color: var(--corPrincipal);
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    position: relative;
+
+}
+
+.explicacaoPadrao::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(270deg, var(--corPrincipal) 0%, var(--corFundo) 100%);
+    transition: all .5s cubic-bezier(0.86, 0, 0.07, 1);
+    width: 90%;
+    transform-origin: bottom left;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+}
+
+.explicacaoPadrao:hover::before {
+    transform: scaleX(1);
+}
+
+.quadrado.dois {
+    width: 100%;
+    height: 480px;
+    position: absolute;
+    z-index: -1000;
+    margin-top: 290px;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+
+#habilidades {
+    width: 935px;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    scroll-margin-top: 160px;
+    padding: 0 30px;
+}
+
+#introHabilidades {
+    width: 935px;
+}
+
+#habilidadesEspecificacoes {
+    width: 570px;
+    height: 315px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardHabilidades {
+    width: 130px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--corDetalhes);
+    border: 1px solid #1f1f1f;
+    border-radius: 4px;
+    transition: all 1.5s;
+    cursor: pointer;
+}
+
+.cardHabilidades:hover {
+    border: 1px solid var(--corPrincipal);
+}
+
+.imgHabilidades {
+    width: 70px;
+    height: 70px;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+#profissional {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 130px;
+    z-index: 1;
+    padding: 0 30px;
+    scroll-margin-top: 130px;
+    width: 935px;
+}
+
+#introExperiencia {
+    width: 100%;
+}
+
+#experienciasEspecificacoes {
+    width: 570px;
+}
+
+.cardExperiencias {
+    display: flex;
+    background: var(--corDetalhes);
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.imgEmpresa {
+    width: 120px;
+    margin-right: 20px;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+#contato {
+    width: 800px;
+    padding: 50px 45px;
+    background: var(--corDetalhes);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 300px;
+    z-index: 1;
+}
+
+#descricaoContato>h1 {
+    color: var(--corTitulos);
+    font-size: 30px;
+    width: 400px;
+}
+
+#descricaoContato>p {
+    color: var(--corTexto);
+    font-size: 13px;
+    width: 500px;
+    margin-top: 20px;
+}
+
+#contato>a {
+    font-size: 14px;
+    color: var(--corTitulos);
+    padding: 7px 22px;
+    background: var(--corPrincipal);
+    margin-right: 50px;
+    transition: all 1s;
+    border: 1px solid var(--corDetalhes);
+}
+
+#contato>a:hover {
+    transform: translateY(-5px);
+    background: var(--corQuadrados);
+    border: 1px solid var(--corPrincipal);
+    color: var(--corPrincipal);
+}
+
+.quadrado.tres {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    z-index: -1000;
+    margin-top: 300px;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+footer {
+    margin-top: 350px;
+    height: 140px;
+    width: 100%;
+}
+
+footer>.navbar {
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#copyr {
+    width: 100%;
+    background: var(--corDetalhes);
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+}
+
+.imgSm {
+    width: 23px;
+    transition: transform 1s;
+}
+
+.imgSm:hover {
+    transform: translateY(-10px);
+}
+
+#copyr>p {
+    color: var(--corTexto);
+    font-size: 14px;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+@media(1300px >=width) {
+    #projetos {
+        width: 100%;
+        scroll-margin-top: 130px;
+    }
+
+    .projetosPrincipal {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .projetosPrincipal.dois {
+        display: flex;
+        align-items: center;
+    }
+
+
+}
+
+@media(1000px >=width) {
+
+    #servicos,
+    #profissional,
+    #habilidades,
+    #introExperiencia,
+    #introHabilidades,
+    #apresentacao,
+    #header {
+        width: 100%;
+    }
+
+    #header{
+        padding: 30px;
+    }
+
+    #apresentacao{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #sobreMim h1 {
+        font-size: 48px;
+    }
+
+    #servicosEspecificacoes {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 300px;
+    }
+
+    #introProjetos {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    #habilidadesEspecificacoes {
+        width: 300px;
+        height: auto;
+    }
+
+    .cardHabilidades {
+        margin: 10px;
+    }
+
+    .quadrado.tres {
+        height: 490px;
+        margin-top: 150px;
+    }
+
+    #contato {
+        width: 80%;
+        flex-direction: column;
+        align-items: start;
+        padding: 40px 30px;
+    }
+
+    #contato>a {
+        margin: 20px 0 0 0;
+    }
+}
+
+@media(750px >=width) {
+
+    #toggle{
+        display: block;
+        width: 30px;
+        border-top: 2px solid var(--corPrincipal);
+        z-index: 11000;
+    }
+
+    #toggle::after, #toggle::before{
+        content: '';
+        width: 30px;
+        height: 2px;
+        background: var(--corPrincipal);
+        display: block;
+        margin-top: 5px;
+        transition: .6s;
+        position: relative;
+    }
+
+    #header{
+        position: fixed;
+        z-index: 100000;
+        background: var(--corFundo);
+    }
+
+    #header.active{
+        height: 10000vh;
+        align-items: start;
+        z-index: 10000;
+        overflow-y: hidden;
+        position: fixed;
+    }
+
+    #header.reveal{
+        background: var(--corDetalhes);
+    }
+
+    #header.active #toggle{
+        border-top-color: transparent;
+    }
+
+    header.active #toggle::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    header.active #toggle::before{
+        transform: rotate(135deg);
+    }
+
+    .navbar{
+        display: block;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 80px;
+        z-index: 10000;
+        height: 0;
+        transition: 1s;
+        visibility: hidden;
+        overflow-y: hidden;
+        background: var(--corDetalhes);
+    }
+
+    .navbar li{
+        padding: 16px 0;
+        margin: 0 32px;
+        border-bottom: 2px solid var(--corFundo);
+    }
+
+    #header.active .navbar{
+        height: calc(100vh - 80px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #apresentacao{
+        margin-top: 150px;
+    }
+
+    #sobreMim{  
+        width: 100%;
+        height: auto;
+    }
+
+    #sobreMim div{
+        padding: 0;
+    }
+
+    #servicosEspecificacoes {
+        padding: 0 30px;
+    }
+
+    #experienciasEspecificacoes {
+        width: 100%;
+    }
+
+    .cardExperiencias {
+        flex-direction: column;
+    }
+
+    .imgEmpresa {
+        margin-bottom: 20px;
+    }
+
+    .imgSeta {
+        margin: 0 25px;
+        width: 28px;
+        height: 28px;
+    }
+
+    #contato{
+        scroll-margin-top: 200px;
+    }
+
+    #descricaoContato>h1,
+    #descricaoContato>p {
+        width: 100%;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    #copyr{
+        padding: 20px 0;
+    }
+
+    .navbar.footer{
+        display: none;
+    }
+}
+
+@media(630px >=width) {
+    .bgProjetos {
+        padding: 20px 10px;
+    }
+
+    .projetosEspecificacoes {
+        width: 100%;
+    }
+
+    .boxImg {
+        width: 100%;
+    }
+
+    .imgSeta {
+        margin: 0 5px;
+    }
+
+    .projetosPrincipal.dois {
+        padding: 0 38px;
+    }
+
+}
+
+@media(430px >=width) {
+
+    .quadrado.um {
+        width: 11000px;
+    }
+
+    #sobreMim h1 {
+        font-size: 40px;
+    }
+
+    #sobreMim h3 {
+        font-size: 20px;
+    }
+
+    #photoPrincipal{
+        width: 310px;
+        height: 420px;
+    }
+
+    .quadrado.tres {
+        height: 490px;
+        margin-top: 180px;
+    }
+
+    #contato {
+        padding: 30px 20px;
+    }
+
+    #descricaoContato>h1 {
+        font-size: 25px;
+    }
+}
