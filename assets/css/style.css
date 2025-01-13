@@ -706,11 +706,11 @@ footer>.navbar {
         width: 100%;
     }
 
-    #header{
+    #header {
         padding: 30px;
     }
 
-    #apresentacao{
+    #apresentacao {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
@@ -762,14 +762,15 @@ footer>.navbar {
 
 @media(750px >=width) {
 
-    #toggle{
+    #toggle {
         display: block;
         width: 30px;
         border-top: 2px solid var(--corPrincipal);
         z-index: 11000;
     }
 
-    #toggle::after, #toggle::before{
+    #toggle::after,
+    #toggle::before {
         content: '';
         width: 30px;
         height: 2px;
@@ -780,13 +781,13 @@ footer>.navbar {
         position: relative;
     }
 
-    #header{
+    #header {
         position: fixed;
         z-index: 100000;
         background: var(--corFundo);
     }
 
-    #header.active{
+    #header.active {
         height: 10000vh;
         align-items: start;
         z-index: 10000;
@@ -794,24 +795,24 @@ footer>.navbar {
         position: fixed;
     }
 
-    #header.reveal{
+    #header.reveal {
         background: var(--corDetalhes);
     }
 
-    #header.active #toggle{
+    #header.active #toggle {
         border-top-color: transparent;
     }
 
-    header.active #toggle::after{
+    header.active #toggle::after {
         transform: rotate(-135deg);
         top: -7px;
     }
 
-    header.active #toggle::before{
+    header.active #toggle::before {
         transform: rotate(135deg);
     }
 
-    .navbar{
+    .navbar {
         display: block;
         position: absolute;
         width: 100%;
@@ -825,28 +826,28 @@ footer>.navbar {
         background: var(--corDetalhes);
     }
 
-    .navbar li{
+    .navbar li {
         padding: 16px 0;
         margin: 0 32px;
         border-bottom: 2px solid var(--corFundo);
     }
 
-    #header.active .navbar{
+    #header.active .navbar {
         height: calc(100vh - 80px);
         visibility: visible;
         overflow-y: auto;
     }
 
-    #apresentacao{
+    #apresentacao {
         margin-top: 150px;
     }
 
-    #sobreMim{  
+    #sobreMim {
         width: 100%;
         height: auto;
     }
 
-    #sobreMim div{
+    #sobreMim div {
         padding: 0;
     }
 
@@ -872,7 +873,7 @@ footer>.navbar {
         height: 28px;
     }
 
-    #contato{
+    #contato {
         scroll-margin-top: 200px;
     }
 
@@ -881,24 +882,24 @@ footer>.navbar {
         width: 100%;
     }
 
-    footer{
+    footer {
         height: auto;
     }
 
-    #copyr{
+    #copyr {
         padding: 20px 0;
         flex-direction: column;
     }
 
-    #copyr > #logo{
+    #copyr>#logo {
         display: none;
     }
 
-    #copyr > p{
+    #copyr>p {
         margin-top: 10px;
     }
 
-    .navbar.footer{
+    .navbar.footer {
         display: none;
     }
 }
@@ -935,7 +936,7 @@ footer>.navbar {
         font-size: 20px;
     }
 
-    #photoPrincipal{
+    #photoPrincipal {
         width: 310px;
         height: 420px;
     }

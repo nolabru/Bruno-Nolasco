@@ -62,8 +62,8 @@ const baseServP = {
     origin: "top"
 };
 
-boxServP.forEach((servp, index) =>{
-    revelar.reveal(servp,{
+boxServP.forEach((servp, index) => {
+    revelar.reveal(servp, {
         ...baseServP,
         delay: 500 + (index * 200)
     })
@@ -76,8 +76,8 @@ const baseServS = {
     origin: "top"
 };
 
-boxServS.forEach((servs, index) =>{
-    revelar.reveal(servs,{
+boxServS.forEach((servs, index) => {
+    revelar.reveal(servs, {
         ...baseServS,
         delay: 200 + (index * 200)
     })
@@ -99,15 +99,15 @@ const baseExp = {
     origin: "top"
 };
 
-boxExp.forEach((exp, index) =>{
-    revelar.reveal(exp,{
+boxExp.forEach((exp, index) => {
+    revelar.reveal(exp, {
         ...baseExp,
         delay: 300 + (index * 500)
     })
 });
 
 // -------------------------------------------
- 
+
 revelar.reveal("#introProjetos", {
     duration: 1000,
     delay: 400,
@@ -129,12 +129,12 @@ const baseProj = {
     origin: "top"
 };
 
-boxProj.forEach((proj, index) =>{
-    revelar.reveal(proj,{
+boxProj.forEach((proj, index) => {
+    revelar.reveal(proj, {
         ...baseProj,
         delay: 500 + (index * 200)
     })
-}) 
+})
 
 // -------------------------------------------
 
@@ -152,12 +152,12 @@ const baseHabil = {
     origin: "top"
 };
 
-boxHabil.forEach((habil, index) =>{
-    revelar.reveal(habil,{
+boxHabil.forEach((habil, index) => {
+    revelar.reveal(habil, {
         ...baseHabil,
         delay: 300 + (index * 200)
     })
-}) 
+})
 
 // -------------------------------------------
 
@@ -194,7 +194,7 @@ revelar.reveal("#socialMedia", {
 revelar.reveal("#copyr p", {
     duration: 1000,
     delay: 600,
-    distance: "50px",
+    distance: "20px",
     origin: "right"
 });
 
@@ -202,13 +202,11 @@ revelar.reveal("#copyr p", {
 
 const up = document.querySelector(".buttonUp");
 
-window.addEventListener('scroll', () =>{
-   if(window.scrollY > 400)
-    {
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
         up.classList.add('active');
-    } 
-    else 
-    {
+    }
+    else {
         up.classList.remove('active');
     }
 });
