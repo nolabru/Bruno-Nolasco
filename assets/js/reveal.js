@@ -179,21 +179,21 @@ revelar.reveal("footer .navbar", {
 
 revelar.reveal("#copyr #logo", {
     duration: 1000,
-    delay: 600,
-    distance: "50px",
+    delay: 300,
+    distance: "20px",
     origin: "left"
 });
 
 revelar.reveal("#socialMedia", {
     duration: 1000,
-    delay: 700,
-    distance: "50px",
+    delay: 400,
+    distance: "20px",
     origin: "top"
 });
 
 revelar.reveal("#copyr p", {
-    duration: 1000,
-    delay: 600,
+    duration: 300,
+    delay: 300,
     distance: "20px",
     origin: "right"
 });
