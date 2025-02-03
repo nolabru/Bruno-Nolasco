@@ -511,7 +511,6 @@ h3 {
 }
 
 #habilidadesEspecificacoes {
-    width: 570px;
     height: 315px;
     display: flex;
     flex-wrap: wrap;
@@ -530,6 +529,7 @@ h3 {
     border-radius: 4px;
     transition: all 1.5s;
     cursor: pointer;
+    margin-top: 19px;
 }
 
 .cardHabilidades:hover {
@@ -623,7 +623,7 @@ h3 {
     height: 500px;
     position: absolute;
     z-index: -1000;
-    margin-top: 300px;
+    margin-top: 320px;
 }
 
 /* ------------------------------------------------------------------------------ */
