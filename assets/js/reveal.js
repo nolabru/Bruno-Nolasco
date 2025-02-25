@@ -191,20 +191,6 @@ revelar.reveal("#copyr #logo", {
     origin: "left"
 });
 
-revelar.reveal("#socialMedia", {
-    duration: 1000,
-    delay: 400,
-    distance: "20px",
-    origin: "top"
-});
-
-revelar.reveal("#copyr p", {
-    duration: 300,
-    delay: 300,
-    distance: "20px",
-    origin: "right"
-});
-
 // -------------------------------------------
 
 const up = document.querySelector(".buttonUp");
