@@ -7,6 +7,8 @@
     <title>Bruno Nolasco</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
@@ -33,7 +35,8 @@
                 <p class="texto">
                     Um jovem apaixonado por tecnologia e organização.
                     Resido em São Paulo e sou estudante do último semestre de Ciência da Computação.
-                    Atuei como Desenvolvedor de Automações no Itaú Unibanco, Desenvolvedor Júnior no Colégio Iavne e atuo como Desenvolvedor
+                    Atuei como Desenvolvedor de Automações no Itaú Unibanco, Desenvolvedor Júnior no Colégio Iavne e
+                    atuo como Desenvolvedor
                     Full-Stack freelancer.
                 </p>
                 <a class="button" href="assets/docs/CV Bruno Nolasco.pdf" download>Baixar CV</a>
@@ -42,8 +45,10 @@
     </section>
     <div class="quadrado um"></div>
     <section id="servicos">
-        <h2 class="tituloSecao">Serviços</h2>
-        <h4 class="subtituloSecao">Uma boa qualidade e total suporte ao cliente.</h4>
+        <div id="introServicos">
+            <h2 class="tituloSecao">Serviços</h2>
+            <h4 class="subtituloSecao">Uma boa qualidade e total suporte ao cliente.</h4>
+        </div>
         <div id="servicosEspecificacoes">
             <div id="cardServicos">
                 <div class="cardServicos">
@@ -93,7 +98,7 @@
         <div id="introExperiencia">
             <h2 class="tituloSecao">Experiência</h2>
             <h4 class="subtituloSecao" style="margin-bottom: 13px;">Atualmente busco oportunidade de atuar como
-                Desenvolvedor Full Stack Python</h4>
+                Desenvolvedor Full Stack Júnior</h4>
             <a href="https://www.linkedin.com/in/nolabru/" target="_blank" class="button">LinkedIn</a>
         </div>
         <div id="experienciasEspecificacoes">
@@ -104,9 +109,12 @@
                     <h3 class="tituloPadrao">Iavne Beith Chinuch</h3>
                     <p class="explicacaoPadrao" style="position: initial;">Desenvolvedor Júnior</p>
                     <p class="descricaoPadrao" style="font-size: 12px;">
-                        No Colégio Iavne, atuei no desenvolvimento de automações em Python para otimizar processos administrativos. Além disso, 
-                        trabalhei em parceria com a empresa GVdasa, responsável pelo sistema de cadastros e matrículas, aprimorando essa plataforma com NestJS para um controle mais eficiente de alunos e matrículas. 
-                        Minha função também envolveu o contato direto com dados sensíveis, garantindo a segurança e a integridade das informações dentro das boas práticas de desenvolvimento.
+                        No Colégio Iavne, atuei no desenvolvimento de automações em Python para otimizar processos
+                        administrativos. Além disso,
+                        trabalhei em parceria com a empresa GVdasa, responsável pelo sistema de cadastros e matrículas,
+                        aprimorando essa plataforma com NestJS para um controle mais eficiente de alunos e matrículas.
+                        Minha função também envolveu o contato direto com dados sensíveis, garantindo a segurança e a
+                        integridade das informações dentro das boas práticas de desenvolvimento.
                     </p>
                 </div>
             </div>
@@ -117,8 +125,11 @@
                     <h3 class="tituloPadrao">Itáu Unibanco</h3>
                     <p class="explicacaoPadrao" style="position: initial;">Estagiário de Automações</p>
                     <p class="descricaoPadrao" style="font-size: 12px;">
-                        No Itaú Unibanco, fui responsável pelo desenvolvimento de cinco automações utilizando Python e Pandas, focadas na análise de dados e otimização de processos internos. 
-                        Além disso, utilizei Tkinter para a criação de interfaces visuais, tornando as ferramentas mais acessíveis e intuitivas para os usuários. Durante esse período, trabalhei dentro da metodologia ágil Scrum, 
+                        No Itaú Unibanco, fui responsável pelo desenvolvimento de cinco automações utilizando Python e
+                        Pandas, focadas na análise de dados e otimização de processos internos.
+                        Além disso, utilizei Tkinter para a criação de interfaces visuais, tornando as ferramentas mais
+                        acessíveis e intuitivas para os usuários. Durante esse período, trabalhei dentro da metodologia
+                        ágil Scrum,
                         participando de cerimônias e contribuindo para a melhoria contínua das soluções desenvolvidas.
                     </p>
                 </div>
@@ -136,124 +147,377 @@
             <img class="imgSeta esquerda" src="assets/images/seta_icon.png" alt="">
             <div class="projetosPrincipal">
                 <div class="projetosEspecificacoes">
+                    <h3 class="tituloPadrao">AX Security</h3>
                     <div class="cardProjetos">
                         <div class="bgProjetos">
                             <div class="boxImg">
-                                <a class="repProjetos" href="https://github.com/nolabru/Project-Login"
-                                    target="_blank">Repositório</a>
-                                <img class="imgProjeto" src="assets/images/projeto_um.png" alt="">
+                                <img class="imgProjeto" src="assets/images/projeto_ax.png" alt="">
+                                <div class="infos ax">Detalhes</div>
                             </div>
                         </div>
-                        <h3 class="tituloPadrao">Tela de Login Simples</h3>
-                        <p class="descricaoPadrao">HTML5 - CSS3 - Javascript</p>
-                        <a class="explicacaoPadrao" href="https://nolabru.github.io/Project-Login/"
-                            target="_blank">Visualizar Projeto</a>
+                    </div>
+                </div>
+                <div class="bgInfos ax">
+                    <div class="cardInfos">
+                        <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                        <img class="imgInfos" src="assets/images/projeto_ax.png" alt="">
+                        <div class="descricaoInfos">
+                            <h2 class="tituloSecao">Ax Security</h2>
+                            <h4 class="subtituloSecao">
+                                Projeto desenvolvido para a empresa de segurança Ax Security, sendo intuitivo e
+                                responsivo, refletindo a expertise
+                                da empresa em soluções de segurança, trazendo os serviços prestados e produtos.
+                            </h4>
+                            <div class="cardsMin">
+                                <p class="tituloCard" style="margin-bottom: 8px;">Tecnologias</p>
+                                <div class="boxInfos">
+                                    <div class="cardMinInfos techs">
+                                        <i class="devicon-html5-plain colored iconsCard techInfos"></i>
+                                        <p class="nameInfos">HTML5</p>
+                                    </div>
+                                    <div class="cardMinInfos techs">
+                                        <i class="devicon-css3-plain colored iconsCard techInfos"></i>
+                                        <p class="nameInfos">CSS3</p>
+                                    </div>
+                                    <div class="cardMinInfos techs">
+                                        <i class="devicon-javascript-plain colored iconsCard techInfos"></i>
+                                        <p class="nameInfos">JavaScript</p>
+                                    </div>
+                                    <div class="cardMinInfos techs">
+                                        <i class="devicon-php-plain colored iconsCard techInfos"></i>
+                                        <p class="nameInfos">PHP</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardsMin">
+                                <p class="tituloCard" style="margin-bottom: 8px;">Links</p>
+                                <div class="boxInfos">
+                                    <a href="https://axsecurity.com.br/" target="_blank" class="cardMinInfos links">
+                                        <i class="fa-regular fa-eye iconsCard linkInfos"></i>
+                                        <p class="nameInfos">Visualizar o Projeto</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="projetosEspecificacoes">
+                    <h3 class="tituloPadrao">Ana Esther Fukumoto</h3>
                     <div class="cardProjetos">
                         <div class="bgProjetos">
                             <div class="boxImg">
-                                <a class="repProjetos" href="https://github.com/nolabru/Project-Belinha"
-                                    target="_blank">Repositório</a>
-                                <img class="imgProjeto" src="assets/images/projeto_dois.png" alt="">
+                                <img class="imgProjeto" src="assets/images/projeto_dr.png" alt="">
+                                <div class="infos dr">Detalhes</div>
                             </div>
                         </div>
-                        <h3 class="tituloPadrao">História da Belinha</h3>
-                        <p class="descricaoPadrao">HTML5 - CSS3 - Javascript</p>
-                        <a class="explicacaoPadrao" href="https://nolabru.github.io/Project-Belinha/"
-                            target="_blank">Visualizar Projeto</a>
+                    </div>
+                </div>
+                <div class="bgInfos dr">
+                    <div class="cardInfos">
+                        <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                        <img class="imgInfos" src="assets/images/projeto_dr.png" alt="">
+                        <div class="descricaoInfos">
+                            <h2 class="tituloSecao">Ana Esther Fukumoto</h2>
+                            <h4 class="subtituloSecao">
+                                Projeto desenvolvido para consultório doutura Ana Esther Fukumoto, trazendo informações
+                                sobre o consultório, os serviços e a carreira dela.
+                            </h4>
+                            <div class="cardsMin">
+                                <p class="tituloCard" style="margin-bottom: 8px;">Tecnologias</p>
+                                <div class="boxInfos">
+                                    <div class="cardMinInfos techs">
+                                        <i class="devicon-html5-plain colored iconsCard techInfos"></i>
+                                        <p class="nameInfos">HTML5</p>
+                                    </div>
+                                    <div class="cardMinInfos techs">
+                                        <i class="devicon-css3-plain colored iconsCard techInfos"></i>
+                                        <p class="nameInfos">CSS3</p>
+                                    </div>
+                                    <div class="cardMinInfos techs">
+                                        <i class="devicon-javascript-plain colored iconsCard techInfos"></i>
+                                        <p class="nameInfos">JavaScript</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardsMin">
+                                <p class="tituloCard" style="margin-bottom: 8px;">Links</p>
+                                <div class="boxInfos">
+                                    <a href="https://draanaestherfukumoto.com.br/" target="_blank"
+                                        class="cardMinInfos links">
+                                        <i class="fa-regular fa-eye iconsCard linkInfos"></i>
+                                        <p class="nameInfos">Visualizar o Projeto</p>
+                                    </a>
+                                    <!-- <a href="" class="cardMinInfos links">
+                                        <i class="devicon-github-original iconsCard linkInfos"></i>
+                                        <p class="nameInfos">Visualizar o Repositório</p>
+                                    </a> -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="projetosEspecificacoes">
+                    <h3 class="tituloPadrao">Calculadora de IMC</h3>
                     <div class="cardProjetos">
                         <div class="bgProjetos">
                             <div class="boxImg">
-                                <a class="repProjetos" href="https://axsecurity.com.br/" target="_blank">Projeto</a>
-                                <img class="imgProjeto" src="assets/images/projeto_tres.png" alt="">
+                                <img class="imgProjeto" src="assets/images/projeto_imc.png" alt="">
+                                <div class="infos imc">Detalhes</div>
                             </div>
                         </div>
-                        <h3 class="tituloPadrao">AX Security</h3>
-                        <p class="descricaoPadrao">HTML5 - CSS3 - Javascript - PHP</p>
-                        <a class="explicacaoPadrao" href="https://axsecurity.com.br/" target="_blank">Visualizar
-                            Projeto</a>
+                    </div>
+                </div>
+                <div class="bgInfos imc">
+                    <div class="cardInfos">
+                        <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                        <img class="imgInfos" src="assets/images/projeto_imc.png" alt="">
+                        <div class="descricaoInfos">
+                            <h2 class="tituloSecao">Calculadora IMC</h2>
+                            <h4 class="subtituloSecao">
+                                Projeto pessoal desenvolvido para calcular o Índice de Massa Corporal (IMC), fornecendo
+                                informações de saúde e bem-estar.
+                            </h4>
+                            <div class="cardsMin">
+                                <p class="tituloCard" style="margin-bottom: 8px;">Tecnologias</p>
+                                <div class="boxInfos">
+                                    <div class="cardMinInfos techs">
+                                        <i class="devicon-html5-plain colored iconsCard techInfos"></i>
+                                        <p class="nameInfos">HTML5</p>
+                                    </div>
+                                    <div class="cardMinInfos techs">
+                                        <i class="devicon-css3-plain colored iconsCard techInfos"></i>
+                                        <p class="nameInfos">CSS3</p>
+                                    </div>
+                                    <div class="cardMinInfos techs">
+                                        <i class="devicon-javascript-plain colored iconsCard techInfos"></i>
+                                        <p class="nameInfos">JavaScript</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardsMin">
+                                <p class="tituloCard" style="margin-bottom: 8px;">Links</p>
+                                <div class="boxInfos">
+                                    <a href="https://nolabru.github.io/Calculadora-IMC" target="_blank"
+                                        class="cardMinInfos links">
+                                        <i class="fa-regular fa-eye iconsCard linkInfos"></i>
+                                        <p class="nameInfos">Visualizar o Projeto</p>
+                                    </a>
+                                    <a href="https://github.com/nolabru/Calculadora-IMC" target="_blank"
+                                        class="cardMinInfos links">
+                                        <i class="devicon-github-original iconsCard linkInfos"></i>
+                                        <p class="nameInfos">Visualizar o Repositório</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="projetosEspecificacoes">
+                    <h3 class="tituloPadrao">Nolacake</h3>
                     <div class="cardProjetos">
                         <div class="bgProjetos">
                             <div class="boxImg">
-                                <a class="repProjetos" href="https://draanaestherfukumoto.com.br"
-                                    target="_blank">Projeto</a>
-                                <img class="imgProjeto" src="assets/images/projeto_quatro.png" alt="">
+                                <img class="imgProjeto" src="assets/images/projeto_cake.png" alt="">
+                                <div class="infos cake">Detalhes</div>
                             </div>
                         </div>
-                        <h3 class="tituloPadrao">Ana Esther Fukumoto</h3>
-                        <p class="descricaoPadrao">HTML5 - CSS3 - Javascript</p>
-                        <a class="explicacaoPadrao" href="https://draanaestherfukumoto.com.br"
-                            target="_blank">Visualizar Projeto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bgInfos cake">
+                <div class="cardInfos">
+                    <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                    <img class="imgInfos" src="assets/images/projeto_cake.png" alt="">
+                    <div class="descricaoInfos">
+                        <h2 class="tituloSecao">Nolacake</h2>
+                        <h4 class="subtituloSecao">
+                            <h4 class="subtituloSecao">
+                                Projeto integrador transdisciplinar da universidade criado para a venda de cupcakes,
+                                proporcionando uma experiência de compra
+                                prática e deliciosa.
+                            </h4>
+                        </h4>
+                        <div class="cardsMin">
+                            <p class="tituloCard" style="margin-bottom: 8px;">Tecnologias</p>
+                            <div class="boxInfos">
+                                <div class="cardMinInfos techs">
+                                    <i class="devicon-html5-plain colored iconsCard techInfos"></i>
+                                    <p class="nameInfos">HTML5</p>
+                                </div>
+                                <div class="cardMinInfos techs">
+                                    <i class="devicon-css3-plain colored iconsCard techInfos"></i>
+                                    <p class="nameInfos">CSS3</p>
+                                </div>
+                                <div class="cardMinInfos techs">
+                                    <i class="devicon-javascript-plain colored iconsCard techInfos"></i>
+                                    <p class="nameInfos">JavaScript</p>
+                                </div>
+                                <div class="cardMinInfos techs">
+                                    <i class="devicon-php-plain colored iconsCard techInfos"></i>
+                                    <p class="nameInfos">PHP</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardsMin">
+                            <p class="tituloCard" style="margin-bottom: 8px;">Links</p>
+                            <div class="boxInfos">
+                                <a href="https://github.com/nolabru/Nolacake" target="_blank"
+                                    class="cardMinInfos links">
+                                    <i class="devicon-github-original iconsCard linkInfos"></i>
+                                    <p class="nameInfos">Visualizar o Repositório</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="projetosPrincipal dois">
                 <div class="projetosEspecificacoes">
+                    <h3 class="tituloPadrao">História da Belinha</h3>
                     <div class="cardProjetos">
                         <div class="bgProjetos">
                             <div class="boxImg">
-                                <a class="repProjetos" href="https://github.com/nolabru/Nolacake"
-                                    target="_blank">Repositório</a>
-                                <img class="imgProjeto" src="assets/images/projeto_cinco.png" alt="">
+                                <img class="imgProjeto" src="assets/images/projeto_belinha.png" alt="">
+                                <div class="infos bel">Detalhes</div>
                             </div>
                         </div>
-                        <h3 class="tituloPadrao">Nolacake</h3>
-                        <p class="descricaoPadrao">HTML5 - CSS3 - Javascript - PHP</p>
-                        <a class="explicacaoPadrao" href="https://github.com/nolabru/Nolacake"
-                            target="_blank">Visualizar Repositório</a>
                     </div>
                 </div>
                 <div class="projetosEspecificacoes">
+                    <h3 class="tituloPadrao">Tela de Login</h3>
                     <div class="cardProjetos">
                         <div class="bgProjetos">
                             <div class="boxImg">
-                                <a class="repProjetos" href="https://github.com/nolabru/Calculadora-IMC"
-                                    target="_blank">Repositório</a>
-                                <img class="imgProjeto" src="assets/images/projeto_seis.png" alt="">
+                                <img class="imgProjeto" src="assets/images/projeto_login.png" alt="">
+                                <div class="infos log">Detalhes</div>
                             </div>
                         </div>
-                        <h3 class="tituloPadrao">Calculadora de IMC</h3>
-                        <p class="descricaoPadrao">HTML5 - CSS3 - Javascript</p>
-                        <a class="explicacaoPadrao" href="https://nolabru.github.io/Calculadora-IMC/"
-                            target="_blank">Visualizar Projeto</a>
                     </div>
                 </div>
                 <div class="projetosEspecificacoes">
+                    <h3 class="tituloPadrao">Projeto em Desenvolvimento</h3>
+                    <p class="descricaoPadrao">Aproveite para visualizar os outros projetos.</p>
                     <div class="cardProjetos">
                         <div class="bgProjetos">
                             <div class="boxImg">
                                 <!-- <a class="repProjetos" href=""
                                     target="_blank"></a> -->
                                 <img class="imgProjeto" src="assets/images/projeto_desenvolver.jpg" alt="">
+                                <div class="infos">Detalhes</div>
                             </div>
                         </div>
-                        <h3 class="tituloPadrao">Projeto em Desenvolvimento</h3>
-                        <p class="descricaoPadrao">Aproveite para visualizar os outros projetos.</p>
                         <!-- <a class="explicacaoPadrao" href=""
                             target="_blank">Visualizar Projeto</a> -->
                     </div>
                 </div>
                 <div class="projetosEspecificacoes">
+                    <h3 class="tituloPadrao">Projeto em Desenvolvimento</h3>
+                    <p class="descricaoPadrao">Aproveite para visualizar os outros projetos.</p>
                     <div class="cardProjetos">
                         <div class="bgProjetos">
                             <div class="boxImg">
                                 <!-- <a class="repProjetos" href=""
                                     target="_blank"></a> -->
                                 <img class="imgProjeto" src="assets/images/projeto_desenvolver.jpg" alt="">
+                                <div class="infos">Detalhes</div>
                             </div>
                         </div>
-                        <h3 class="tituloPadrao">Projeto em Desenvolvimento</h3>
-                        <p class="descricaoPadrao">Aproveite para visualizar os outros projetos.</p>
                         <!-- <a class="explicacaoPadrao" href=""
                             target="_blank">Visualizar Projeto</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="bgInfos bel">
+                <div class="cardInfos">
+                    <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                    <img class="imgInfos" src="assets/images/projeto_belinha.png" alt="">
+                    <div class="descricaoInfos">
+                        <h2 class="tituloSecao">História da Belinha</h2>
+                        <h4 class="subtituloSecao">
+                            <h4 class="subtituloSecao">
+                                Projeto pessoal sobre Belinha, minha cachorrinha, contando sua história e desafios
+                                durante a vida, um dos meus primeiros projetos.
+                            </h4>
+                        </h4>
+                        <div class="cardsMin">
+                            <p class="tituloCard" style="margin-bottom: 8px;">Tecnologias</p>
+                            <div class="boxInfos">
+                                <div class="cardMinInfos techs">
+                                    <i class="devicon-html5-plain colored iconsCard techInfos"></i>
+                                    <p class="nameInfos">HTML5</p>
+                                </div>
+                                <div class="cardMinInfos techs">
+                                    <i class="devicon-css3-plain colored iconsCard techInfos"></i>
+                                    <p class="nameInfos">CSS3</p>
+                                </div>
+                                <div class="cardMinInfos techs">
+                                    <i class="devicon-javascript-plain colored iconsCard techInfos"></i>
+                                    <p class="nameInfos">JavaScript</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardsMin">
+                            <p class="tituloCard" style="margin-bottom: 8px;">Links</p>
+                            <div class="boxInfos">
+                                <a href="https://nolabru.github.io/Project-Belinha/" target="_blank"
+                                    class="cardMinInfos links">
+                                    <i class="fa-regular fa-eye iconsCard linkInfos"></i>
+                                    <p class="nameInfos">Visualizar o Projeto</p>
+                                </a>
+                                <a href="https://github.com/nolabru/Project-Belinha/" target="_blank"
+                                    class="cardMinInfos links">
+                                    <i class="devicon-github-original iconsCard linkInfos"></i>
+                                    <p class="nameInfos">Visualizar o Repositório</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bgInfos log">
+                <div class="cardInfos">
+                    <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                    <img class="imgInfos" src="assets/images/projeto_login.png" alt="">
+                    <div class="descricaoInfos">
+                        <h2 class="tituloSecao">Tela de Login</h2>
+                        <h4 class="subtituloSecao">
+                            <h4 class="subtituloSecao">
+                                Projeto desenvolvido para criar uma tela de login simples, com interface interativa,
+                                foco na usabilidade e design funcional.
+                            </h4>
+                        </h4>
+                        <div class="cardsMin">
+                            <p class="tituloCard" style="margin-bottom: 8px;">Tecnologias</p>
+                            <div class="boxInfos">
+                                <div class="cardMinInfos techs">
+                                    <i class="devicon-html5-plain colored iconsCard techInfos"></i>
+                                    <p class="nameInfos">HTML5</p>
+                                </div>
+                                <div class="cardMinInfos techs">
+                                    <i class="devicon-css3-plain colored iconsCard techInfos"></i>
+                                    <p class="nameInfos">CSS3</p>
+                                </div>
+                                <div class="cardMinInfos techs">
+                                    <i class="devicon-javascript-plain colored iconsCard techInfos"></i>
+                                    <p class="nameInfos">JavaScript</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardsMin">
+                            <p class="tituloCard" style="margin-bottom: 8px;">Links</p>
+                            <div class="boxInfos">
+                                <a href="https://nolabru.github.io/Project-Login/" target="_blank"
+                                    class="cardMinInfos links">
+                                    <i class="fa-regular fa-eye iconsCard linkInfos"></i>
+                                    <p class="nameInfos">Visualizar o Projeto</p>
+                                </a>
+                                <a href="https://github.com/nolabru/Project-Login/" target="_blank"
+                                    class="cardMinInfos links">
+                                    <i class="devicon-github-original iconsCard linkInfos"></i>
+                                    <p class="nameInfos">Visualizar o Repositório</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -264,7 +528,7 @@
     <section id="habilidades">
         <div id="introHabilidades">
             <h2 class="tituloSecao">Habilidades</h2>
-            <h4 class="subtituloSecao hab" style="margin-bottom: 13px;">Passe o cursor do mouse nas habilidades para
+            <h4 class="subtituloSecao hab">Passe o cursor do mouse nas habilidades para
                 interação.</h4>
         </div>
         <div id="habilidadesEspecificacoes">
@@ -287,6 +551,27 @@
                     alt="">
             </div>
             <div class="cardHabilidades"
+                data-descricao="React é uma biblioteca JavaScript para construir interfaces de usuário interativas.">
+                <img class="imgHabilidades" style="width: 60px; height: 60px;" src="assets/images/react_icon.png"
+                    alt="">
+            </div>
+            <div class="cardHabilidades"
+                data-descricao="NodeJs é um ambiente de execução JavaScript para backend, ideal para APIs rápidas e escaláveis.">
+                <img class="imgHabilidades" src="assets/images/node_icon.png" alt="">
+            </div>
+            <div class="cardHabilidades"
+                data-descricao="NestJs é um framework para Node.js com TypeScript, facilita a criação de APIs organizadas e escaláveis.">
+                <img class="imgHabilidades" src="assets/images/nest_icon.png" alt="">
+            </div>
+            <div class="cardHabilidades"
+                data-descricao="TypeScript é um superset do JavaScript com tipagem estática, que ajuda a evitar erros no código.">
+                <img class="imgHabilidades" src="assets/images/typescript_icon.png" alt="">
+            </div>
+            <div class="cardHabilidades"
+                data-descricao="MySQL é um banco de dados relacional que gerencia, organiza e consultaa grandes volumes de dados com eficiência.">
+                <img class="imgHabilidades" src="assets/images/mysql_icon.png" alt="">
+            </div>
+            <div class="cardHabilidades"
                 data-descricao="Git é uma ferramenta que permite rastrear alterações e facilitar a colaboração em projetos de software.">
                 <img class="imgHabilidades" src="assets/images/git_icon.png" alt="">
             </div>
@@ -296,28 +581,8 @@
                     alt="">
             </div>
             <div class="cardHabilidades"
-                data-descricao="MySQL é um banco de dados relacional que gerencia, organiza e consultaa grandes volumes de dados com eficiência.">
-                <img class="imgHabilidades" src="assets/images/mysql_icon.png" alt="">
-            </div>
-            <div class="cardHabilidades"
-                data-descricao="Django é um framework em Python, ideal para desenvolvimento de aplicações web.">
-                <img class="imgHabilidades" src="assets/images/django_icon.png" alt="">
-            </div>
-            <div class="cardHabilidades"
-                data-descricao="NodeJs é um ambiente de execução JavaScript para backend, ideal para APIs rápidas e escaláveis.">
-                <img class="imgHabilidades" src="assets/images/node_icon.png" alt="">
-            </div>
-            <div class="cardHabilidades"
-                data-descricao="NestJs é um framework para Node.js com TypeScript, facilita a criação de APIs organizadas e escaláveis.">
-                <img class="imgHabilidades" src="assets/images/nest_icon.png" alt="">   
-            </div>
-            <div class="cardHabilidades"
-                data-descricao=" Flask é um framework minimalista para Python, usado para criar APIs e apps web de forma rápida.">
-                <img class="imgHabilidades" src="assets/images/flask_icon.png" alt="">
-            </div>
-            <div class="cardHabilidades"
-                data-descricao="Tkinter é uma biblioteca do Python para criar interfaces gráficas simples e rápidas.">
-                <img class="imgHabilidades" src="assets/images/tkinter_icon.png" alt="">
+                data-descricao="Figma é uma ferramenta de design colaborativo na web, usada para criar interfaces e protótipos em tempo real.">
+                <img class="imgHabilidades" src="assets/images/figma_icon.png" alt="">
             </div>
         </div>
         <div class="quadrado tres"></div>

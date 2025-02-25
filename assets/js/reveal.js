@@ -122,6 +122,13 @@ revelar.reveal(".imgSeta", {
     origin: "top"
 });
 
+revelar.reveal('.tituloPadrao',{
+    duration: 2500,
+    delay: 300,
+    distance: "50px",
+    origin: "top"
+})
+
 const boxProj = document.querySelectorAll(".cardProjetos");
 const baseProj = {
     duration: 2000,
