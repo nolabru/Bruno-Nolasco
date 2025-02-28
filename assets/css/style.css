@@ -468,6 +468,12 @@ body.active{
     flex-direction: column;
     padding: 10px;
     position: relative;
+    transform: translateY(-200px);
+    transition: .5s ease-in-out;
+}
+
+.bgInfos.active .cardInfos{
+    transform: translateY(0);
 }
 
 .close {
