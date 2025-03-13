@@ -1,25 +1,24 @@
-const toggle = document.getElementById('toggle');
-const navBar = document.getElementById('header');
+const toggle = document.getElementById("toggle");
+const navBar = document.getElementById("header");
 
-toggle.addEventListener('click', () => {
-    navBar.classList.toggle('active');
+toggle.addEventListener("click", () => {
+  navBar.classList.toggle("active");
 });
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navBar.classList.add('reveal');
-    }
-    else {
-        navBar.classList.remove('reveal');
-    }
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    navBar.classList.add("reveal");
+  } else {
+    navBar.classList.remove("reveal");
+  }
 });
 
-const links = document.querySelectorAll('.navbar a')
+const links = document.querySelectorAll(".navbar a");
 
 function closeMenus() {
-    navBar.classList.remove('active');
+  navBar.classList.remove("active");
 }
 
-links.forEach(link => {
-    link.addEventListener('click', closeMenus)
-})
+links.forEach((link) => {
+  link.addEventListener("click", closeMenus);
+});
