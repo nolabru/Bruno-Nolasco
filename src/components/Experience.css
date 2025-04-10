@@ -1,0 +1,92 @@
+.experience-container {
+  position: relative;
+}
+
+.experience-line {
+  width: 0.1px;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff10;
+}
+
+.experience-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: var(--default-border-radius);
+  background: var(--primary-color);
+  border: 3px solid var(--background-color);
+  margin-left: 2px;
+}
+
+.experience-route-box {
+  display: flex;
+  text-align: right;
+  margin-top: 30px;
+}
+
+.experience-route-box.right {
+  justify-content: end;
+  text-align: left;
+}
+
+.experience-job {
+  width: 46%;
+  background: var(--detail-color);
+  border-radius: var(--default-border-radius);
+  padding: 24px;
+}
+
+.position {
+  color: var(--title-color);
+  font-size: var(--projects-title-font-size);
+  margin-bottom: var(--detail-padding-margin);
+}
+
+.company {
+  font-size: var(--services-title-font-size);
+  color: var(--primary-color);
+  margin-bottom: var(--detail-padding-margin);
+}
+
+.experience-icon {
+  font-size: 14px;
+  color: var(--primary-color);
+  margin: 0 10px 1px 0;
+}
+
+.time {
+  font-size: var(--details-font-size);
+  color: var(--text-color);
+  margin-bottom: 16px;
+}
+
+@media (max-width: 1000px) {
+  .position {
+    font-size: var(--services-title-font-size);
+  }
+}
+
+@media (max-width: 750px) {
+  .experience-line {
+    left: 0;
+  }
+
+  .experience-route-box {
+    text-align: initial;
+  }
+
+  .experience-job {
+    width: 100%;
+  }
+
+  .experience-circle {
+    border: 3px solid var(--detail-color);
+  }
+}

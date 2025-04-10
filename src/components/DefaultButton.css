@@ -1,0 +1,34 @@
+.default-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: var(--button-padding);
+  background: var(--square-color);
+  color: var(--text-color);
+  font-size: var(--button-font-size);
+  border: 1px solid var(--detail-color);
+  width: fit-content;
+  border-radius: var(--default-border-radius);
+  transition: var(--default-transition);
+  cursor: pointer;
+}
+
+.default-button:hover {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.default-icon {
+  font-size: 13px;
+  padding-bottom: 2px;
+  transition: var(--default-transition);
+}
+
+.default-button:hover .default-icon {
+  transform: translateX(3px);
+  color: var(--primary-color);
+}
+
+.izzi {
+  background: var(--detail-color);
+}

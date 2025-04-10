@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+:root {
+  --primary-color: #5ba37b;
+  --square-color: #181818;
+  --detail-color: #1e1e1e;
+  --background-color: #111111;
+
+  --text-color: #a8a8a8;
+  --title-color: #fff;
+
+  --font-family: "Poppins", "sans-serif";
+
+  --section-title-font-size: 26px;
+  --section-subtitle-font-size: 15px;
+  --section-description-font-size: 12px;
+  --button-font-size: 13px;
+  --details-font-size: 14px;
+  --title-font-size: 64px;
+  --primary-subtitle-font-size: 26px;
+  --secondary-subtitle-font-size: 22px;
+  --projects-title-font-size: 18.5px;
+  --services-data-font-size: 25px;
+  --services-title-font-size: 16px;
+
+  --section-padding: 30px 24px;
+  --button-padding: 10px 30px;
+  --detail-padding-margin: 8px;
+  --experience-padding-margin: 20px;
+
+  --default-width: 980px;
+
+  --default-transform: translateY(-3px);
+
+  --default-transition: 0.3s ease-in-out;
+
+  --default-border-radius: 10px;
+  --secondary-border-radius: 5px;
+  --image-border-radius: 5px 5px 0 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: var(--font-family);
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(to bottom, transparent, var(--primary-color));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background-color);
+  overflow-x: hidden;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}

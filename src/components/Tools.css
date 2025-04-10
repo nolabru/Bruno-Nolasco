@@ -1,0 +1,66 @@
+.square.two {
+  width: 10000px;
+  height: 400px;
+  top: -465px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--square-color);
+}
+
+.tools {
+  position: relative;
+}
+
+.my-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tool-card {
+  width: 120px;
+  height: 120px;
+  border-radius: var(--secondary-border-radius);
+  background: var(--detail-color);
+  transition: 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #00000000;
+}
+
+.tool-card:hover {
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+}
+
+.tool-title {
+  color: var(--text-color);
+  font-size: var(--services-title-font-size);
+  margin: 20px 0 10px;
+  font-weight: 500;
+}
+
+.tool-icon {
+  font-size: 50px;
+  min-width: 50px;
+  color: var(--primary-color);
+}
+
+@media (max-width: 530px) {
+  .square.two {
+    top: -570px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tool-card {
+    width: 98px;
+    height: 98px;
+  }
+
+  .tool-icon {
+    font-size: 40px;
+    color: var(--primary-color);
+  }
+}

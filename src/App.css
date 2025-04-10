@@ -1,0 +1,42 @@
+/* Container Principal */
+
+.content-container {
+  max-width: var(--default-width);
+  /* height: 900vh; */
+  margin: 0 auto;
+  border: 1px solid var(--primary-color);
+  padding: var(--section-padding);
+}
+
+/* Quadrados */
+
+.square {
+  position: absolute;
+  background: var(--square-color);
+  z-index: -1;
+}
+
+/* Títulos das Seções */
+
+.section-headers-title {
+  font-size: var(--section-title-font-size);
+  letter-spacing: 1.5px;
+  color: var(--title-color);
+  margin-top: 120px;
+}
+
+/* Subtítulos das Seções */
+
+.section-headers-subtitle {
+  font-size: var(--section-subtitle-font-size);
+  color: var(--text-color);
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+/* Descrição dos Cards */
+
+.card-description {
+  color: var(--text-color);
+  font-size: var(--button-font-size);
+}

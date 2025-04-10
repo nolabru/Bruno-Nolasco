@@ -1,0 +1,131 @@
+.slider {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+}
+
+.controll-slider {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0 20px 10px;
+}
+
+.slide-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--square-color);
+  border: 1px solid var(--detail-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: var(--default-transition);
+}
+
+.slide-button:hover {
+  border: 1px solid var(--primary-color);
+}
+
+.slider-button-icon {
+  font-size: var(--services-title-font-size);
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  flex: 0 0 100%;
+}
+
+.project-card {
+  background: var(--detail-color);
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--secondary-border-radius);
+  height: auto;
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--image-border-radius);
+}
+
+.project-data {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-title {
+  font-size: var(--section-subtitle-font-size);
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.info-acess {
+  display: flex;
+  justify-content: space-between;
+}
+
+.default-button.projects {
+  border-radius: var(--secondary-border-radius);
+  width: auto;
+}
+
+.default-icon.projects {
+  padding-top: 1.5px;
+}
+
+.select-slide {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 5px;
+}
+
+.selected-slide {
+  width: 12px;
+  height: 12px;
+  border-radius: var(--default-border-radius);
+  cursor: pointer;
+  background: var(--text-color);
+  transition: var(--default-transition);
+}
+
+.selected-slide.active {
+  width: 24px;
+  background: var(--primary-color);
+}
+
+@media (max-width: 980px) {
+  .project-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .info-acess {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 530px) {
+  .info-acess {
+    display: flex;
+    flex-direction: column;
+  }
+}

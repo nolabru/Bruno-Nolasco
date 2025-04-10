@@ -1,0 +1,28 @@
+.contact {
+  background: red;
+  margin: 300px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card-contact {
+  width: 700px;
+  height: 300px;
+  background: rgb(129, 129, 199);
+  display: flex;
+}
+
+.contact-text {
+}
+
+.contact-title {
+}
+
+.contact-description {
+}
+
+.contact-box-button {
+}
+
+.contact-box-button {
+}
