@@ -1,3 +1,12 @@
+import security from "../assets/security.jpg";
+import doctor from "../assets/doctor.jpg";
+import developer from "../assets/developer.jpg";
+import secretWord from "../assets/secret-word.jpg";
+import bmi from "../assets/bmi.jpg";
+import cupcake from "../assets/cupcake.jpg";
+import dachshund from "../assets/dachshund.jpg";
+import login from "../assets/login.jpg";
+
 import { icons } from "./icons";
 
 // NavBar Titles
@@ -135,7 +144,7 @@ export const languages = [
 // Projects Data
 export const projects = [
   {
-    background: "/security.jpg",
+    background: security,
     title: "Ax Security",
     hrefProject: "https://axsecurity.com.br/",
     description:
@@ -144,7 +153,7 @@ export const projects = [
     state: "Professional",
   },
   {
-    background: "/doctor.jpg",
+    background: doctor,
     title: "Doutora Ana Esther Fukumoto",
     hrefProject: "https://draanaestherfukumoto.com.br/",
     description:
@@ -153,7 +162,7 @@ export const projects = [
     state: "Professional",
   },
   {
-    background: "/developer.jpg",
+    background: developer,
     title: "Izzi Tech",
     hrefProject: "https://izzitech.vercel.app/",
     description:
@@ -162,7 +171,7 @@ export const projects = [
     state: "Professional",
   },
   {
-    background: "/secret-word.jpg",
+    background: secretWord,
     title: "Secret Word",
     hrefProject: "https://nolabru.github.io/Secret-Word/",
     hrefRepository: "https://github.com/nolabru/Secret-Word/",
@@ -171,7 +180,7 @@ export const projects = [
     tools: languages[2],
   },
   {
-    background: "/bmi.jpg",
+    background: bmi,
     title: "Calculadora de IMC",
     hrefProject: "https://nolabru.github.io/Calculadora-IMC/",
     hrefRepository: "https://github.com/nolabru/Calculadora-IMC/",
@@ -180,7 +189,7 @@ export const projects = [
     tools: languages[1],
   },
   {
-    background: "/cupcake.jpg",
+    background: cupcake,
     title: "Loja de Cupcakes",
     hrefRepository: "https://github.com/nolabru/Nolacake/",
     description:
@@ -189,7 +198,7 @@ export const projects = [
     state: "Personal",
   },
   {
-    background: "/dachshund.jpg",
+    background: dachshund,
     title: "A História da Belinha",
     hrefProject: "https://nolabru.github.io/Project-Belinha/",
     hrefRepository: "https://github.com/nolabru/Project-Belinha/",
@@ -198,7 +207,7 @@ export const projects = [
     tools: languages[1],
   },
   {
-    background: "/login.jpg",
+    background: login,
     title: "Tela de Login",
     hrefProject: "https://nolabru.github.io/Project-Login/",
     hrefRepository: "https://github.com/nolabru/Project-Login/",

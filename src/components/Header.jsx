@@ -1,5 +1,9 @@
 import "./Header.css";
+
+import logo from "../assets/logo.svg";
+
 import { useEffect, useState } from "react";
+
 import { linkTitle } from "../data/data";
 
 const Header = () => {
@@ -35,7 +39,7 @@ const Header = () => {
   return (
     <section className={`header-scroll-true ${scrolled ? "scrolled" : ""}`}>
       <header className="header">
-        <img className="logo reveal" src="logo.svg" alt="logo" />
+        <img className="logo reveal" src={logo} alt="logo" />
         <nav className="nav-bar">
           <ul className={`header-link-list ${menuOpen ? "open" : ""}`}>
             {linkTitle.map((link) => (
