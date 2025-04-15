@@ -28,7 +28,7 @@ const Tools = () => {
 
   return (
     <section id="Habilidades" className="tools scr-mt">
-      {/* <span className="square two"></span> */}
+      <span className="square two"></span>
       <div className="title-section-reveal">
         <h2 className="section-headers-title">{sectionHeaders[3].title}</h2>
         <p className="section-headers-subtitle">{subtitle}</p>
@@ -52,7 +52,7 @@ const Tools = () => {
           </div>
         </div>
       ))}
-      {/* <span className="square three"></span> */}
+      <span className="square three"></span>
     </section>
   );
 };

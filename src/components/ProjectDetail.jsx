@@ -10,10 +10,15 @@ import { buttonProjects } from "../data/data";
 
 const ProjectDetail = ({ selectedProject, closeDetail }) => {
   useEffect(() => {
-    document.body.style.overflow = "hidden";
+    const html = document.documentElement;
+    const body = document.body;
+
+    html.style.overflow = "hidden";
+    body.style.overflow = "hidden";
 
     return () => {
-      document.body.style.overflow = "";
+      html.style.overflow = "";
+      body.style.overflow = "";
     };
   }, []);
 

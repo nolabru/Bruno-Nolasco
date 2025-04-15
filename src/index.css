@@ -25,9 +25,8 @@
   --services-data-font-size: 25px;
   --section-title-font-size: 26px;
   --medium-font-size: 40px;
-  --normal-font-size: 50px; 
+  --normal-font-size: 50px;
   --title-font-size: 64px;
-
 
   --section-padding: 30px 24px;
   --button-padding: 10px 30px;
@@ -69,13 +68,14 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background: var(--background-color);
-  overflow-x: hidden;
 }
 
-body.no-scroll {
-  overflow: hidden;
+body.no-scroll,
+html.no-scroll {
+  overflow-y: hidden;
 }

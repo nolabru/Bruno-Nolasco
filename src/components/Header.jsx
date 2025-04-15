@@ -19,10 +19,14 @@ const Header = () => {
   };
 
   useEffect(() => {
+    const html = document.documentElement;
+
     if (menuOpen) {
       document.body.classList.add("no-scroll");
+      html.classList.add("no-scroll");
     } else {
       document.body.classList.remove("no-scroll");
+      html.classList.remove("no-scroll");
     }
   }, [menuOpen]);
 
