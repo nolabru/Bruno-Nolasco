@@ -76,7 +76,7 @@
 .project-title {
   font-size: var(--section-subtitle-font-size);
   color: var(--text-color);
-  font-weight: 500;
+  font-weight: var(--bold-font-weight);
 }
 
 .info-acess {

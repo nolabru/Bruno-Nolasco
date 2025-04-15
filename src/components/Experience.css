@@ -56,7 +56,7 @@
 }
 
 .experience-icon {
-  font-size: 14px;
+  font-size: var(--details-font-size);
   color: var(--primary-color);
   margin: 0 10px 1px 0;
 }

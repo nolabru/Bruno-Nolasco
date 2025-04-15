@@ -32,7 +32,7 @@
 .header-link {
   font-size: var(--details-font-size);
   color: var(--text-color);
-  font-weight: 300;
+  font-weight: var(--light-font-weight);
   position: relative;
   transition: var(--default-transition);
 }

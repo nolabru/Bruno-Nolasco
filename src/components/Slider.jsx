@@ -73,7 +73,7 @@ const Slider = () => {
           return (
             <div className="project-list" key={pageIndex}>
               {currentProjects.map((project, index) => (
-                <div className="project-card project-card-reveal" key={index}>
+                <div className="project-card" key={index}>
                   <img
                     className="project-image"
                     src={project.background}

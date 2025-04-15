@@ -19,7 +19,7 @@
 }
 
 .default-icon {
-  font-size: 13px;
+  font-size: var(--button-font-size);
   padding-bottom: 2px;
   transition: var(--default-transition);
 }

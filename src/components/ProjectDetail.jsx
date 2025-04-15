@@ -28,7 +28,7 @@ const ProjectDetail = ({ selectedProject, closeDetail }) => {
       return "display-none";
     return "";
   };
-  
+
   return (
     <div className="project-detail-box">
       <div className="project-detail">

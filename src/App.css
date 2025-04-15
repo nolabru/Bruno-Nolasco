@@ -14,7 +14,6 @@
 
 .content-container {
   max-width: var(--default-width);
-  /* height: 900vh; */
   margin: 0 auto;
   padding: var(--section-padding);
 }
@@ -41,7 +40,7 @@
 .section-headers-subtitle {
   font-size: var(--section-subtitle-font-size);
   color: var(--text-color);
-  font-weight: 300;
+  font-weight: var(--light-font-weight);
   margin-bottom: 15px;
 }
 

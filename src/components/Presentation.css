@@ -53,7 +53,7 @@
   }
 
   .about-text.name {
-    font-size: 52px;
+    font-size: var(--normal-font-size);
   }
 }
 
@@ -81,7 +81,7 @@
   }
 
   .about-text.name {
-    font-size: 40px;
+    font-size: var(--medium-font-size);
   }
 
   .about-text.work {

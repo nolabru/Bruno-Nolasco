@@ -7,7 +7,7 @@
   background: var(--square-color);
 }
 
-.square.three{
+.square.three {
   width: 100000px;
   height: 620px;
   bottom: -560px;
@@ -45,11 +45,11 @@
   color: var(--text-color);
   font-size: var(--services-title-font-size);
   margin: 20px 0 10px;
-  font-weight: 500;
+  font-weight: var(--bold-font-weight);
 }
 
 .tool-icon {
-  font-size: 50px;
+  font-size: var(--normal-font-size);
   min-width: 50px;
   color: var(--primary-color);
 }
@@ -67,7 +67,7 @@
   }
 
   .tool-icon {
-    font-size: 40px;
+    font-size: var(--medium-font-size);
     color: var(--primary-color);
   }
 }

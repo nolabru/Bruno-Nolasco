@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   background: #111111e8;
+  z-index: 1;
 }
 
 .project-detail {
@@ -32,7 +33,7 @@
 }
 
 .x-icon {
-  font-size: 18px;
+  font-size: var(--projects-title-font-size);
   color: var(--title-color);
   transition: var(--default-transition);
 }
@@ -83,10 +84,16 @@
 }
 
 .tech-item-icon {
-  font-size: 17px;
+  font-size: var(--projects-title-font-size);
 }
 
 .tech-item-tool {
   font-size: var(--section-description-font-size);
   color: var(--title-color);
+}
+
+@media (max-width: 650px) {
+  .project-detail-box {
+    padding: 0 35px;
+  }
 }
