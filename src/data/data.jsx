@@ -254,6 +254,11 @@ export const tools = [
     techDescription: "Figma - 2 Anos de Experiência",
   },
   {
+    icon: icons.faUbuntu,
+    category: "Ferramentas",
+    techDescription: "Ubuntu - 1 Ano de Experiência",
+  },
+  {
     icon: icons.faHtml5,
     category: "Habilidades",
     techDescription: "HTML5 - 4 Anos de Experiência",
