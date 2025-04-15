@@ -1,5 +1,7 @@
 import "./Services.css";
 
+import useScrollReveal from "../hooks/useScrollReveal";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { sectionHeaders, textButtons, services } from "../data/data";
@@ -7,15 +9,25 @@ import { sectionHeaders, textButtons, services } from "../data/data";
 import DefaultButton from "./DefaultButton";
 
 const Services = () => {
+  useScrollReveal(".title-section-reveal", { delay: 300 });
+  useScrollReveal(".cards-reveal", {
+    interval: 300,
+    duration: 600,
+    distance: "30px",
+    delay: 400,
+  });
+
   return (
-    <section className="services">
+    <section id="Serviços" className="services scr-mt">
       <span className="square one"></span>
-      <h2 className="section-headers-title">{sectionHeaders[0].title}</h2>
-      <p className="section-headers-subtitle">{sectionHeaders[0].subtitle}</p>
-      <DefaultButton buttons={[textButtons[1]]} />
+      <div className="title-section-reveal">
+        <h2 className="section-headers-title">{sectionHeaders[0].title}</h2>
+        <p className="section-headers-subtitle">{sectionHeaders[0].subtitle}</p>
+        <DefaultButton buttons={[textButtons[1]]} />
+      </div>
       <div className="services-container">
         {services.map((card, i) => (
-          <div key={i} className="service-card">
+          <div key={i} className="service-card cards-reveal">
             <div className={`service-description ${i === 1 ? "mid" : ""}`}>
               <FontAwesomeIcon
                 className={`service-icon ${i === 1 ? "mid" : ""}`}

@@ -11,6 +11,7 @@ const DefaultButton = ({ buttons }) => {
           className={`default-button ${button.id === 2 ? "izzi" : ""}`}
           href={button.href}
           download={button.href.endsWith(".pdf")}
+          target="_blank"
         >
           {button.text}
           <FontAwesomeIcon className="default-icon" icon={button.icon} />

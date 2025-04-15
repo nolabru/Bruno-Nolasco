@@ -7,6 +7,13 @@
   background: var(--square-color);
 }
 
+.square.three{
+  width: 100000px;
+  height: 620px;
+  bottom: -560px;
+  left: -2000px;
+}
+
 .tools {
   position: relative;
 }

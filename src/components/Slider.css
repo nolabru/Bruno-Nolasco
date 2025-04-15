@@ -1,3 +1,7 @@
+.display-none {
+  display: none;
+}
+
 .slider {
   overflow: hidden;
   display: flex;
@@ -78,11 +82,13 @@
 .info-acess {
   display: flex;
   justify-content: space-between;
+  gap: 3px;
 }
 
 .default-button.projects {
   border-radius: var(--secondary-border-radius);
-  width: auto;
+  flex-shrink: 1;
+  flex-grow: 1;
 }
 
 .default-icon.projects {
@@ -115,17 +121,15 @@
   .project-list {
     grid-template-columns: repeat(1, 1fr);
   }
-
-  .info-acess {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
 }
 
 @media (max-width: 530px) {
+  .project-card {
+    height: fit-content;
+  }
+
   .info-acess {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 }

@@ -2,8 +2,10 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <section className="footer" >
-      <h1>OLá 2</h1>
+    <section className="footer">
+      <p className="copyright">
+        © 2025 Bruno Nolasco. Todos os direitos reservados.
+      </p>
     </section>
   );
 };

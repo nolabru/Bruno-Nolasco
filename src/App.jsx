@@ -12,17 +12,19 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <section className="content-container">
+    <>
       <Header />
-      <Presentation />
-      <Services />
-      <Experience />
-      <Projects />
-      <Slider />
-      <Tools />
-      <Contact />
+      <section className="content-container">
+        <Presentation />
+        <Services />
+        <Experience />
+        <Projects />
+        <Slider />
+        <Tools />
+        <Contact />
+      </section>
       <Footer />
-    </section>
+    </>
   );
 }
 

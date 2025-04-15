@@ -4,6 +4,7 @@ import {
   faWindowRestore,
   faHardDrive,
   faCalendar,
+  faPaperPlane,
 } from "@fortawesome/free-regular-svg-icons";
 
 // Solid Icons
@@ -31,6 +32,9 @@ import {
   faNodeJs,
   faUbuntu,
   faAngular,
+  faWhatsapp,
+  faFigma,
+  faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
 
 // Exported Icons
@@ -62,4 +66,10 @@ export const icons = {
   faAngular,
   faPython,
   faUbuntu,
+  faFigma,
+  faGitAlt,
+
+  faPaperPlane,
+
+  faWhatsapp,
 };

@@ -5,6 +5,7 @@
   --square-color: #181818;
   --detail-color: #1e1e1e;
   --background-color: #111111;
+  --input-color: #292929;
 
   --text-color: #a8a8a8;
   --title-color: #fff;
@@ -37,6 +38,8 @@
   --default-border-radius: 10px;
   --secondary-border-radius: 5px;
   --image-border-radius: 5px 5px 0 0;
+
+  --default-scroll-margin-top: 150px;
 }
 
 * {

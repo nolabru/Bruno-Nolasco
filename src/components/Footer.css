@@ -1,3 +1,10 @@
 .footer {
-  background: blue;
+  background: var(--detail-color);
+  padding: 20px;
+  text-align: center;
+}
+
+.copyright {
+  font-size: var(--details-font-size);
+  color: var(--text-color);
 }

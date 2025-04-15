@@ -55,6 +55,7 @@
 .detail-project-title {
   font-size: var(--secondary-subtitle-font-size);
   color: var(--title-color);
+  margin-bottom: 5px;
 }
 
 .detail-card-title {
@@ -69,7 +70,7 @@
 }
 
 .detail-mini-cards.links {
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
 }
 
 .tech-item {
@@ -88,8 +89,4 @@
 .tech-item-tool {
   font-size: var(--section-description-font-size);
   color: var(--title-color);
-}
-
-.display-none {
-  display: none;
 }

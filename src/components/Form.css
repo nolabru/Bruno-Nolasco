@@ -1,0 +1,78 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.default-label {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--details-font-size);
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  color: #fff;
+  gap: 5px;
+}
+
+.default-input {
+  font-size: var(--details-font-size);
+  color: var(--text-color);
+  padding: 10px;
+  background: var(--input-color);
+  border-radius: var(--secondary-border-radius);
+  margin-bottom: 10px;
+}
+
+.default-input::placeholder {
+  color: #686868;
+}
+
+.default-input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+.default-input::selection {
+  background: #e6f7e1;
+}
+
+.message {
+  height: 120px;
+  resize: none;
+  font-family: var(--secondary-font);
+}
+
+.submit-button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: red;
+  width: fit-content;
+  display: flex;
+  gap: 10px;
+}
+
+.submit-input {
+  background: #0000;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: var(--default-transition);
+  font-size: var(--button-font-size);
+}
+
+.submit-input-icon {
+  font-size: 14px;
+  padding-top: 3px;
+  transition: var(--default-transition);
+}
+
+.default-button.form {
+  margin-top: 10px;
+}
+
+.default-button:hover .submit-input {
+  color: var(--primary-color);
+}
+
+@media (max-width: 750px) {
+  .default-input {
+    margin-bottom: 20px;
+  }
+}

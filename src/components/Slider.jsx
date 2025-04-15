@@ -1,9 +1,8 @@
 import "./Slider.css";
-
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icons } from "../data/icons";
 import { projects, buttonProjects } from "../data/data";
-import { useEffect, useState } from "react";
 import ProjectDetail from "./ProjectDetail";
 
 const Slider = () => {
@@ -62,6 +61,7 @@ const Slider = () => {
           />
         </button>
       </div>
+
       <div
         className="slider-track"
         style={{ transform: `translateX(-${currentPage * 100}%)` }}
@@ -73,14 +73,16 @@ const Slider = () => {
           return (
             <div className="project-list" key={pageIndex}>
               {currentProjects.map((project, index) => (
-                <div className="project-card" key={index}>
+                <div className="project-card project-card-reveal" key={index}>
                   <img
                     className="project-image"
                     src={project.background}
                     alt={project.title}
                   />
+
                   <div className="project-data">
                     <h3 className="project-title">{project.title}</h3>
+
                     <div className="info-acess">
                       {buttonProjects.map((button, i) => {
                         if (button.text === "Detalhes") {
@@ -99,12 +101,38 @@ const Slider = () => {
                           );
                         }
 
+                        let dynamicHref = "#";
+
+                        if (button.text === "Projeto") {
+                          dynamicHref = project.hrefProject;
+                        } else if (button.text === "Repositório") {
+                          dynamicHref = project.hrefRepository;
+                        }
+
+                        const configState = (buttonText) => {
+                          if (
+                            project.state === "Professional" &&
+                            buttonText === "Repositório"
+                          ) {
+                            return "display-none";
+                          } else if (
+                            project.state === "Personal" &&
+                            buttonText === "Projeto"
+                          ) {
+                            return "display-none";
+                          } else {
+                            return;
+                          }
+                        };
+
                         return (
                           <a
                             key={i}
-                            href={button.href}
+                            href={dynamicHref}
                             target="_blank"
-                            className="default-button projects"
+                            className={`default-button projects ${configState(
+                              button.text
+                            )}`}
                           >
                             {button.text}
                             <FontAwesomeIcon

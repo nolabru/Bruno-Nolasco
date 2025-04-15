@@ -1,11 +1,22 @@
+.header-scroll-true {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  transition: var(--default-transition);
+}
+
+.scrolled {
+  background: var(--detail-color);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.041);
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.logo {
-  max-width: 52px;
+  max-width: var(--default-width);
+  margin: 0 auto;
+  padding: 20px 24px;
 }
 
 .nav-bar {

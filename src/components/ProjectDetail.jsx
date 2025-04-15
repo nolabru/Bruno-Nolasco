@@ -8,7 +8,7 @@ import { icons } from "../data/icons";
 
 import { buttonProjects } from "../data/data";
 
-const ProjectDetail = ({ selectedProject, closeDetail, showDetail }) => {
+const ProjectDetail = ({ selectedProject, closeDetail }) => {
   useEffect(() => {
     document.body.style.overflow = "hidden";
 
@@ -17,6 +17,18 @@ const ProjectDetail = ({ selectedProject, closeDetail, showDetail }) => {
     };
   }, []);
 
+  const isHidden = (textButton) => {
+    if (textButton === "Detalhes") return "display-none";
+    if (
+      selectedProject.state === "Professional" &&
+      textButton === "Repositório"
+    )
+      return "display-none";
+    if (selectedProject.state === "Personal" && textButton === "Projeto")
+      return "display-none";
+    return "";
+  };
+  
   return (
     <div className="project-detail-box">
       <div className="project-detail">
@@ -57,11 +69,15 @@ const ProjectDetail = ({ selectedProject, closeDetail, showDetail }) => {
             {buttonProjects.map((button, i) => (
               <a
                 key={i}
-                href={button.href}
-                target="_blank"
-                className={`default-button projects ${
-                  button.text === "Detalhes" ? "display-none" : ""
+                href={`${
+                  button.text === "Projeto"
+                    ? selectedProject.hrefProject
+                    : selectedProject.hrefRepository
                 }`}
+                target="_blank"
+                className={`default-button projects detail ${isHidden(
+                  button.text
+                )}`}
               >
                 {button.text}
                 <FontAwesomeIcon

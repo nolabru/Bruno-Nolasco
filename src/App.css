@@ -1,10 +1,21 @@
+/* Scroll Margin Top */
+
+.scr-mt {
+  scroll-margin-top: var(--default-scroll-margin-top);
+}
+
+/* Logo */
+
+.logo {
+  max-width: 52px;
+}
+
 /* Container Principal */
 
 .content-container {
   max-width: var(--default-width);
   /* height: 900vh; */
   margin: 0 auto;
-  border: 1px solid var(--primary-color);
   padding: var(--section-padding);
 }
 
