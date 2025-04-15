@@ -93,7 +93,17 @@
 }
 
 @media (max-width: 650px) {
+  .detail-mini-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .tech-item {
+    flex-grow: 1;
+  }
+
   .project-detail-box {
-    padding: 0 35px;
+    padding: 0 24px;
   }
 }
