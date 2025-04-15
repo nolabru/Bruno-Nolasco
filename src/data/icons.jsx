@@ -35,6 +35,7 @@ import {
   faWhatsapp,
   faFigma,
   faGitAlt,
+  faSass,
 } from "@fortawesome/free-brands-svg-icons";
 
 // Exported Icons
@@ -68,6 +69,7 @@ export const icons = {
   faUbuntu,
   faFigma,
   faGitAlt,
+  faSass,
 
   faPaperPlane,
 

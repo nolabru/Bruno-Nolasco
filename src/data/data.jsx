@@ -243,9 +243,9 @@ export const tools = [
     techDescription: "Angular - 3 Meses de Estudo",
   },
   {
-    icon: icons.faNodeJs,
+    icon: icons.faSass,
     category: "Estudando",
-    techDescription: "NodeJs - 5 Meses de Estudo",
+    techDescription: "Sass - 1 Mês de Estudo",
   },
   {
     icon: icons.faGitAlt,
@@ -286,6 +286,11 @@ export const tools = [
     icon: icons.faReact,
     category: "Habilidades",
     techDescription: "ReactJs - 1 Ano de Experiência",
+  },
+  {
+    icon: icons.faNodeJs,
+    category: "Habilidades",
+    techDescription: "NodeJs - 1 Ano de Experiência",
   },
   {
     icon: icons.faPython,
