@@ -104,7 +104,7 @@ export const textButtons = [
     id: 2,
     text: "Acessar Site Profissional",
     icon: icons.faArrowUpRightFromSquare,
-    href: "https://izzitech.vercel.app/",
+    href: "https://apestech.vercel.app/",
   },
   {
     id: 3,

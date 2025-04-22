@@ -70,6 +70,16 @@ form {
   color: var(--primary-color);
 }
 
+.feedback-message {
+  margin-top: 15px;
+  font-size: var(--details-font-size);
+  color: var(--primary-color);
+}
+
+.feedback-message.error {
+  color: #dc3545;
+}
+
 @media (max-width: 750px) {
   .default-input {
     margin-bottom: 20px;

@@ -1,11 +1,9 @@
 import "./Form.css";
 
 import { useState } from "react";
-
 import emailjs from "@emailjs/browser";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { icons } from "../data/icons";
 
 const Form = () => {
@@ -13,6 +11,7 @@ const Form = () => {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [feedbackMessage, setFeedbackMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -26,17 +25,24 @@ const Form = () => {
 
     emailjs
       .send(
-        "service_pfaxt2j",
-        "template_7xis6hd",
+        "service_p7xrr3t",
+        "template_vccpk9p",
         templateParams,
-        "RCjEQg5dIpYGM_cCU"
+        "52ayMjkEqE7F7yOsq"
       )
       .then((response) => {
         console.log("Email Enviado", response.status);
+        setFeedbackMessage("Mensagem enviada com sucesso!");
         setName("");
         setEmail("");
         setSubject("");
         setMessage("");
+      })
+      .catch((error) => {
+        console.error("Erro ao enviar o e-mail:", error);
+        setFeedbackMessage(
+          "Erro ao enviar a mensagem. Tente novamente mais tarde."
+        );
       });
   };
 
@@ -93,6 +99,8 @@ const Form = () => {
         <input className="submit-input" type="submit" value="Enviar Mensagem" />
         <FontAwesomeIcon className="default-icon" icon={icons.faPaperPlane} />
       </div>
+
+      {feedbackMessage && <p className="feedback-message">{feedbackMessage}</p>}
     </form>
   );
 };
