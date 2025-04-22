@@ -71,7 +71,7 @@ export const services = [
 export const experience = [
   {
     position: "Engenheiro de Software Júnior",
-    company: "Izzi Tech",
+    company: "Apes Tech",
     time: "Dez/2023 - Atual",
     description:
       "Desenvolvimento de websites, blogs, portfólios, e-commerces e landing pages com arquitetura full stack, utilizando React no front-end e Node.js no back-end para construção de aplicações dinâmicas, performáticas e escaláveis.",
