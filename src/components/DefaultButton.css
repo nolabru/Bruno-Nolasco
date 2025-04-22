@@ -21,12 +21,11 @@
 .default-icon {
   font-size: var(--button-font-size);
   padding-bottom: 2px;
-  transition: var(--default-transition);
+  transition: transform var(--default-transition);
 }
 
 .default-button:hover .default-icon {
   transform: translateX(3px);
-  color: var(--primary-color);
 }
 
 .izzi {
