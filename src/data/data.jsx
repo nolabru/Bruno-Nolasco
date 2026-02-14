@@ -39,6 +39,28 @@ export const sectionHeaders = [
   },
 ];
 
+// Defaults Sections Buttons
+export const textButtons = [
+  {
+    id: 1,
+    text: "Baixar CV",
+    icon: icons.faCircleDown,
+    href: "CV Bruno Nolasco.pdf",
+  },
+  {
+    id: 2,
+    text: "Acessar LinkedIn",
+    icon: icons.faLinkedin,
+    href: "https://linkedin.com/in/nolabru/",
+  },
+  {
+    id: 3,
+    text: "Acessar GitHub",
+    icon: icons.faGithub,
+    href: "https://github.com/nolabru/",
+  },
+];
+
 // Services
 export const services = [
   {
@@ -50,11 +72,11 @@ export const services = [
     dataText: "Projetos",
   },
   {
-    icon: icons.faHardDrive,
-    title: "Criação de APIs RESTful",
+    icon: icons.faAndroid,
+    title: "Desenvolvimento Mobile",
     description:
-      "Desenvolvimento de APIs robustas e bem documentadas para integração entre sistemas e aplicações mobile.",
-    data: "3+",
+      "Desenvolvimento de aplicativos para celular android e IOS, do zero ao aplicativo publicado na loja.",
+    data: "4+",
     dataText: "Anos de Experiência",
   },
   {
@@ -89,34 +111,6 @@ export const experience = [
     time: "Mar/2022 - Jul/2023",
     description:
       "Implementação de automações escaláveis em Python, com manipulação e análise de dados utilizando Pandas, alinhado a práticas de desenvolvimento ágil com metodologia Scrum.",
-  },
-];
-
-// Defaults Sections Buttons
-export const textButtons = [
-  {
-    id: 1,
-    text: "Baixar CV",
-    icon: icons.faCircleDown,
-    href: "CV Bruno Nolasco.pdf",
-  },
-  {
-    id: 2,
-    text: "Acessar Site Profissional",
-    icon: icons.faArrowUpRightFromSquare,
-    href: "https://apestech.vercel.app/",
-  },
-  {
-    id: 3,
-    text: "Acessar LinkedIn",
-    icon: icons.faLinkedin,
-    href: "https://linkedin.com/in/nolabru/",
-  },
-  {
-    id: 4,
-    text: "Acessar GitHub",
-    icon: icons.faGithub,
-    href: "https://github.com/nolabru/",
   },
 ];
 

@@ -2,7 +2,6 @@
 import {
   faCircleDown,
   faWindowRestore,
-  faHardDrive,
   faCalendar,
   faPaperPlane,
 } from "@fortawesome/free-regular-svg-icons";
@@ -21,6 +20,7 @@ import {
 
 // Brands Icons
 import {
+  faAndroid,
   faLinkedin,
   faGithub,
   faHtml5,
@@ -38,6 +38,11 @@ import {
   faSass,
 } from "@fortawesome/free-brands-svg-icons";
 
+// Lucide Icons
+import {
+  CloudDownload
+} from "lucide-react"
+
 // Exported Icons
 export const icons = {
   faCircleDown,
@@ -48,7 +53,7 @@ export const icons = {
   faCaretRight,
 
   faCode,
-  faHardDrive,
+  faAndroid,
   faWindowRestore,
 
   faBriefcase,
@@ -74,4 +79,8 @@ export const icons = {
   faPaperPlane,
 
   faWhatsapp,
+
+  // Lucide Export
+  CloudDownload,
+
 };

@@ -8,7 +8,7 @@ const DefaultButton = ({ buttons }) => {
       {buttons.map((button) => (
         <a
           key={button.id}
-          className={`default-button ${button.id === 2 ? "izzi" : ""}`}
+          className={`default-button`}
           href={button.href}
           download={button.href.endsWith(".pdf")}
           target="_blank"

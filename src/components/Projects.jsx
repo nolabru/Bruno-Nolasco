@@ -14,7 +14,7 @@ const Projects = () => {
     >
       <h2 className="section-headers-title">{sectionHeaders[2].title}</h2>
       <p className="section-headers-subtitle">{sectionHeaders[2].subtitle}</p>
-      <DefaultButton buttons={[textButtons[3]]} />
+      <DefaultButton buttons={[textButtons[2]]} />
     </section>
   );
 };

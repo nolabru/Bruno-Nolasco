@@ -26,7 +26,7 @@ const Experience = () => {
       <div className="title-section-reveal">
         <h2 className="section-headers-title">{sectionHeaders[1].title}</h2>
         <p className="section-headers-subtitle">{sectionHeaders[1].subtitle}</p>
-        <DefaultButton buttons={[textButtons[2]]} />
+        <DefaultButton buttons={[textButtons[1]]} />
       </div>
       <div className="experience-container">
         <div className="experience-line">

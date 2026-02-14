@@ -4,9 +4,7 @@ import useScrollReveal from "../hooks/useScrollReveal";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { sectionHeaders, textButtons, services } from "../data/data";
-
-import DefaultButton from "./DefaultButton";
+import { sectionHeaders, services } from "../data/data";
 
 const Services = () => {
   useScrollReveal(".title-section-reveal", { delay: 300 });
@@ -23,7 +21,6 @@ const Services = () => {
       <div className="title-section-reveal">
         <h2 className="section-headers-title">{sectionHeaders[0].title}</h2>
         <p className="section-headers-subtitle">{sectionHeaders[0].subtitle}</p>
-        <DefaultButton buttons={[textButtons[1]]} />
       </div>
       <div className="services-container">
         {services.map((card, i) => (

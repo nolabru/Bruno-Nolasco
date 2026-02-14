@@ -27,7 +27,3 @@
 .default-button:hover .default-icon {
   transform: translateX(3px);
 }
-
-.izzi {
-  background: var(--detail-color);
-}
