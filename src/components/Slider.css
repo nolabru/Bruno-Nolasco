@@ -21,7 +21,7 @@
   height: 40px;
   border-radius: 20px;
   display: flex;
-  align-items: center;
+  align-items: center;                                              
   justify-content: center;
   background: var(--square-color);
   border: 1px solid var(--detail-color);
@@ -37,6 +37,12 @@
 .slider-button-icon {
   font-size: var(--services-title-font-size);
 }
+
+.slider-button-icon.default-icon-lucide {
+  width: var(--services-title-font-size);
+  height: var(--services-title-font-size);
+}
+
 
 .slider-track {
   display: flex;
@@ -94,6 +100,7 @@
 .default-icon.projects {
   padding-top: 1.5px;
 }
+
 
 .select-slide {
   margin-top: 30px;

@@ -44,21 +44,24 @@ const Slider = () => {
     setSelectedProject(null);
   };
 
+  const renderIcon = (icon, className) => {
+    if (icon && typeof icon === "object" && "iconName" in icon) {
+      return <FontAwesomeIcon icon={icon} className={className} />;
+    }
+
+    const LucideIcon = icon;
+    return <LucideIcon className={`${className} default-icon-lucide`} />;
+  };
+
   return (
     <div className="slider">
       <div className="controll-slider">
         <button onClick={handlePrev} className="slide-button">
-          <FontAwesomeIcon
-            icon={icons.faArrowLeft}
-            className="slider-button-icon"
-          />
+          {renderIcon(icons.back)}
         </button>
 
         <button onClick={handleNext} className="slide-button">
-          <FontAwesomeIcon
-            icon={icons.faArrowRight}
-            className="slider-button-icon"
-          />
+          {renderIcon(icons.go)}
         </button>
       </div>
 
@@ -93,10 +96,7 @@ const Slider = () => {
                               className="default-button projects"
                             >
                               {button.text}
-                              <FontAwesomeIcon
-                                icon={button.icon}
-                                className="default-icon projects"
-                              />
+                              {renderIcon(button.icon, "default-icon projects")}
                             </button>
                           );
                         }
@@ -135,10 +135,7 @@ const Slider = () => {
                             )}`}
                           >
                             {button.text}
-                            <FontAwesomeIcon
-                              icon={button.icon}
-                              className="default-icon projects"
-                            />
+                            {renderIcon(button.icon, "default-icon projects")}
                           </a>
                         );
                       })}
