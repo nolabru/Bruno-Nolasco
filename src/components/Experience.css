@@ -27,7 +27,6 @@
 
 .experience-route-box {
   display: flex;
-  text-align: right;
   margin-top: 30px;
 }
 
@@ -51,20 +50,31 @@
 
 .company {
   font-size: var(--services-title-font-size);
-  color: var(--primary-color);
+  color: var(--title-color);
+  font-weight: 600;
   margin-bottom: var(--detail-padding-margin);
-}
-
-.experience-icon {
-  font-size: var(--details-font-size);
-  color: var(--primary-color);
-  margin: 0 10px 1px 0;
 }
 
 .time {
   font-size: var(--details-font-size);
   color: var(--text-color);
-  margin-bottom: 16px;
+  margin-bottom: 4px;
+  font-style: italic;
+}
+
+.work-icon {
+  width: 14px;
+  height: auto;
+  color: var(--primary-color);
+  margin: 0 6px 0 0;
+  padding-top: 2px;
+}
+
+.calendar-icon {
+  width: 12px;
+  height: auto;
+  color: var(--text-color);
+  margin: 0 8px 0 0;
 }
 
 @media (max-width: 1000px) {

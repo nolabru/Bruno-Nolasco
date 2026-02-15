@@ -40,12 +40,12 @@
 }
 
 .service-icon {
-  font-size: 30px;
   max-width: 30px;
   color: var(--primary-color);
   transition: var(--default-transition);
   margin-bottom: 20px;
 }
+
 
 .service-icon.mid {
   color: var(--title-color);

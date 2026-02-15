@@ -2,8 +2,6 @@ import "./Services.css";
 
 import useScrollReveal from "../hooks/useScrollReveal";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { sectionHeaders, services } from "../data/data";
 
 const Services = () => {
@@ -23,24 +21,26 @@ const Services = () => {
         <p className="section-headers-subtitle">{sectionHeaders[0].subtitle}</p>
       </div>
       <div className="services-container">
-        {services.map((card, i) => (
-          <div key={i} className="service-card cards-reveal">
-            <div className={`service-description ${i === 1 ? "mid" : ""}`}>
-              <FontAwesomeIcon
-                className={`service-icon ${i === 1 ? "mid" : ""}`}
-                icon={card.icon}
-              />
-              <h3 className="service-title">{card.title}</h3>
-              <p className={`card-description ${i === 1 ? "mid" : ""}`}>
-                {card.description}
-              </p>
+        {services.map((card, i) => {
+          const ServiceIcon = card.icon;
+          return (
+            <div key={i} className="service-card cards-reveal">
+              <div className={`service-description ${i === 1 ? "mid" : ""}`}>
+                <ServiceIcon
+                  className={`service-icon ${i === 1 ? "mid" : ""} `}
+                />
+                <h3 className="service-title">{card.title}</h3>
+                <p className={`card-description ${i === 1 ? "mid" : ""}`}>
+                  {card.description}
+                </p>
+              </div>
+              <div className="service-data">
+                <h3 className="service-data-title">{card.data}</h3>
+                <p className="service-data-text">{card.dataText}</p>
+              </div>
             </div>
-            <div className="service-data">
-              <h3 className="service-data-title">{card.data}</h3>
-              <p className="service-data-text">{card.dataText}</p>
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );

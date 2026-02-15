@@ -1,11 +1,11 @@
 import security from "../assets/security.jpg";
-import doctor from "../assets/doctor.jpg";
-import developer from "../assets/developer.jpg";
 import secretWord from "../assets/secret-word.jpg";
-import bmi from "../assets/bmi.jpg";
-import cupcake from "../assets/cupcake.jpg";
 import dachshund from "../assets/dachshund.jpg";
-import login from "../assets/login.jpg";
+import prontuai from "../assets/prontuai.jpg";
+import aifirst from "../assets/aifirst.jpg";
+import fastprice from "../assets/fastprice.jpg";
+import habilitai from "../assets/habilitai.jpg";
+import calma from "../assets/calma.jpg";
 
 import { icons } from "./icons";
 
@@ -44,19 +44,19 @@ export const textButtons = [
   {
     id: 1,
     text: "Baixar CV",
-    icon: icons.faCircleDown,
+    icon: icons.download,
     href: "CV Bruno Nolasco.pdf",
   },
   {
     id: 2,
     text: "Acessar LinkedIn",
-    icon: icons.faLinkedin,
+    icon: icons.linkedin,
     href: "https://linkedin.com/in/nolabru/",
   },
   {
     id: 3,
     text: "Acessar GitHub",
-    icon: icons.faGithub,
+    icon: icons.github,
     href: "https://github.com/nolabru/",
   },
 ];
@@ -64,7 +64,7 @@ export const textButtons = [
 // Services
 export const services = [
   {
-    icon: icons.faCode,
+    icon: icons.web,
     title: "Desenvolvimento Web",
     description:
       "Criação de aplicações web modernas e responsivas, do front-end ao back-end, seguindo as melhores práticas de desenvolvimento.",
@@ -72,7 +72,7 @@ export const services = [
     dataText: "Projetos",
   },
   {
-    icon: icons.faAndroid,
+    icon: icons.mobile,
     title: "Desenvolvimento Mobile",
     description:
       "Desenvolvimento de aplicativos para celular android e IOS, do zero ao aplicativo publicado na loja.",
@@ -80,7 +80,7 @@ export const services = [
     dataText: "Anos de Experiência",
   },
   {
-    icon: icons.faWindowRestore,
+    icon: icons.ux,
     title: "UX/UI Design",
     description:
       "Interfaces de usuário intuitivas e experiências que encantam, mantendo seus visitantes engajados e satisfeitos.",
@@ -92,25 +92,25 @@ export const services = [
 // Professional Experience
 export const experience = [
   {
-    position: "Engenheiro de Software Júnior",
-    company: "Apes Tech",
-    time: "Dez/2023 - Atual",
+    position: "Mid-Level Software Engineer",
+    company: "Echo AI",
+    time: "Abr/2025 - Atual · 11 meses",
     description:
-      "Desenvolvimento de websites, blogs, portfólios, e-commerces e landing pages com arquitetura full stack, utilizando React no front-end e Node.js no back-end para construção de aplicações dinâmicas, performáticas e escaláveis.",
+      "Desenvolvimento de aplicações web e mobile (React, Flutter, React Native) com foco em soluções de IA. Especialista na criação de sistemas multiagentes baseados em LLMs e integração via MCP, gerenciando bancos PostgreSQL/Supabase sob metodologia Scrum para converter tecnologia em valor de negócio.",
   },
   {
-    position: "Engenheiro de Software Júnior",
+    position: "Junior IT Analyst",
     company: "Iavne Beith Chinuch",
-    time: "Jan/2024 - Jan/2025",
+    time: "Jan/2024 - Jan/2025 · 1 ano 1 mês",
     description:
-      "Desenvolvimento de aplicações web escaláveis com React, utilizando Hooks para gerenciamento de estado e React Router para controle de rotas, integradas a APIs RESTful desenvolvidas com Node.js e Express.",
+      "Atuação no suporte técnico e desenvolvimento de sistemas de segurança digital para controle de acesso. Além de otimizar processos administrativos via automação, foi responsável por ministrar aulas de programação em Python, fomentando a formação técnica de alunos.",
   },
   {
-    position: "Desenvolvedor RPA",
+    position: "Software Engineering Intern",
     company: "Itaú Unibanco",
-    time: "Mar/2022 - Jul/2023",
+    time: "Mar/2022 - Jul/2023 · 1 ano 5 meses",
     description:
-      "Implementação de automações escaláveis em Python, com manipulação e análise de dados utilizando Pandas, alinhado a práticas de desenvolvimento ágil com metodologia Scrum.",
+      "Foco em automação de dados financeiros utilizando Python e Pandas. Desenvolvi a solução 'OK2' para validação automática de taxas e consolidação de relatórios para o Credit Suisse, reduzindo erros manuais e otimizando fluxos críticos no time de Eventos Societários.",
   },
 ];
 
@@ -138,91 +138,93 @@ export const languages = [
 // Projects Data
 export const projects = [
   {
+    background: habilitai,
+    title: "HabilitAI",
+    hrefProject: "",
+    description: "",
+    tools: "",
+    state: "Professional",
+  },
+  {
+    background: fastprice,
+    title: "Fastprice",
+    hrefProject: "",
+    description: "",
+    tools: "",
+    state: "Professional",
+  },
+  {
+    background: aifirst,
+    title: "Aifirst",
+    hrefProject: "",
+    description: "",
+    tools: "",
+    state: "Professional",
+  },
+  {
+    background: prontuai,
+    title: "Prontuai",
+    hrefProject: "",
+    description: "",
+    tools: "",
+    state: "Professional",
+  },
+  {
+    background: calma,
+    title: "Calma",
+    hrefProject: "",
+    description: "",
+    tools: "f",
+    state: "Professional",
+  },
+  {
     background: security,
     title: "Ax Security",
-    hrefProject: "https://axsecurity.com.br/",
-    description:
-      "Projeto desenvolvido para a empresa de segurança Ax Security. O site é totalmente intuitivo e responsivo, refletindo a expertise da empresa em soluções de segurança, com destaque para os serviços oferecidos e os produtos comercializados.",
-    tools: languages[0],
-    state: "Professional",
-  },
-  {
-    background: doctor,
-    title: "Doutora Ana Esther Fukumoto",
-    hrefProject: "https://draanaestherfukumoto.com.br/",
-    description:
-      "Projeto criado para o consultório da Dra. Ana Esther Fukumoto, com o objetivo de apresentar informações sobre o consultório, os serviços prestados e a trajetória profissional da doutora.",
-    tools: languages[1],
-    state: "Professional",
-  },
-  {
-    background: developer,
-    title: "Izzi Tech",
-    hrefProject: "https://izzitech.vercel.app/",
-    description:
-      "Projeto desenvolvido para a empresa de tecnologia Izzi Tech, uma empresa especializada no desenvolvimento de soluções digitais completas, mostrando seus serviços, projetos e clientes satisfeitos",
-    tools: languages[2],
+    hrefProject: "",
+    description: "",
+    tools: "",
     state: "Professional",
   },
   {
     background: secretWord,
     title: "Secret Word",
-    hrefProject: "https://nolabru.github.io/Secret-Word/",
-    hrefRepository: "https://github.com/nolabru/Secret-Word/",
-    description:
-      "Projeto pessoal que simula um jogo da forca, no qual o usuário deve adivinhar a palavra secreta. Desenvolvido com foco em interatividade e lógica de programação.",
-    tools: languages[2],
-  },
-  {
-    background: bmi,
-    title: "Calculadora de IMC",
-    hrefProject: "https://nolabru.github.io/Calculadora-IMC/",
-    hrefRepository: "https://github.com/nolabru/Calculadora-IMC/",
-    description:
-      "Projeto pessoal desenvolvido para o cálculo do Índice de Massa Corporal (IMC), oferecendo ao usuário uma forma prática de obter informações relacionadas à saúde e bem-estar.",
-    tools: languages[1],
-  },
-  {
-    background: cupcake,
-    title: "Loja de Cupcakes",
-    hrefRepository: "https://github.com/nolabru/Nolacake/",
-    description:
-      "Projeto integrador transdisciplinar da universidade, criado com o objetivo de simular um sistema de venda de cupcakes, proporcionando ao usuário uma experiência de compra prática, visualmente agradável e intuitiva.",
-    tools: languages[0],
-    state: "Personal",
+    hrefProject: "",
+    description: "",
+    tools: "",
+    state: "",
   },
   {
     background: dachshund,
-    title: "A História da Belinha",
-    hrefProject: "https://nolabru.github.io/Project-Belinha/",
-    hrefRepository: "https://github.com/nolabru/Project-Belinha/",
-    description:
-      "Projeto pessoal dedicado à Belinha, minha cachorrinha, compartilhando sua história de vida e superações. Este foi um dos meus primeiros projetos e tem grande valor sentimental.",
-    tools: languages[1],
+    title: "Dachshund",
+    hrefProject: "",
+    description: "",
+    tools: "",
+    state: "",
   },
-  {
-    background: login,
-    title: "Tela de Login",
-    hrefProject: "https://nolabru.github.io/Project-Login/",
-    hrefRepository: "https://github.com/nolabru/Project-Login/",
-    description:
-      "Projeto desenvolvido para criação de uma tela de login simples, com foco na usabilidade, design funcional e uma interface interativa.",
-    tools: languages[1],
-  },
+
+  // {
+  //   background: dachshund,
+  //   title: "A História da Belinha",
+  //   hrefProject: "https://nolabru.github.io/Project-Belinha/",
+  //   hrefRepository: "https://github.com/nolabru/Project-Belinha/",
+  //   description:
+  //     "Projeto pessoal dedicado à Belinha, minha cachorrinha, compartilhando sua história de vida e superações. Este foi um dos meus primeiros projetos e tem grande valor sentimental.",
+  //   tools: languages[1],
+  // },
 ];
 
 // Projects Buttons
 export const buttonProjects = [
   {
-    icon: icons.faLink,
+    icon: icons.link,
     text: "Projeto",
   },
   {
-    icon: icons.faGithub,
+    icon: icons.github,
     text: "Repositório",
   },
   {
-    icon: icons.faCaretRight,
+    icon: icons.details,
     text: "Detalhes",
   },
 ];
@@ -232,62 +234,62 @@ export const toolTitle = ["Estudando", "Ferramentas", "Habilidades"];
 // My Tools
 export const tools = [
   {
-    icon: icons.faAngular,
+    icon: icons.angular,
     category: "Estudando",
     techDescription: "Angular - 3 Meses de Estudo",
   },
   {
-    icon: icons.faSass,
+    icon: icons.sass,
     category: "Estudando",
     techDescription: "Sass - 1 Mês de Estudo",
   },
   {
-    icon: icons.faGitAlt,
+    icon: icons.git,
     category: "Ferramentas",
     techDescription: "Git - 3 Anos de Experiência",
   },
   {
-    icon: icons.faGithub,
+    icon: icons.github,
     category: "Ferramentas",
     techDescription: "GitHub - 3 Anos de Experiência",
   },
   {
-    icon: icons.faFigma,
+    icon: icons.figma,
     category: "Ferramentas",
     techDescription: "Figma - 2 Anos de Experiência",
   },
   {
-    icon: icons.faUbuntu,
+    icon: icons.ubuntu,
     category: "Ferramentas",
     techDescription: "Ubuntu - 1 Ano de Experiência",
   },
   {
-    icon: icons.faHtml5,
+    icon: icons.html,
     category: "Habilidades",
     techDescription: "HTML5 - 4 Anos de Experiência",
   },
   {
-    icon: icons.faCss3Alt,
+    icon: icons.css,
     category: "Habilidades",
     techDescription: "CSS3 - 4 Anos de Experiência",
   },
   {
-    icon: icons.faJs,
+    icon: icons.js,
     category: "Habilidades",
     techDescription: "JavaScript - 3 Anos de Experiência",
   },
   {
-    icon: icons.faReact,
+    icon: icons.react,
     category: "Habilidades",
     techDescription: "ReactJs - 1 Ano de Experiência",
   },
   {
-    icon: icons.faNodeJs,
+    icon: icons.node,
     category: "Habilidades",
     techDescription: "NodeJs - 1 Ano de Experiência",
   },
   {
-    icon: icons.faPython,
+    icon: icons.python,
     category: "Habilidades",
     techDescription: "Python - 4 Anos de Experiência",
   },
@@ -296,6 +298,6 @@ export const tools = [
 // Social Links
 
 export const socialLinks = [
-  { icon: icons.faLinkedin, href: "https://linkedin.com/in/nolabru" },
-  { icon: icons.faWhatsapp, href: "https://wa.me/5511980327136" },
+  { icon: icons.linkedin, href: "https://linkedin.com/in/nolabru" },
+  { icon: icons.whatsapp, href: "https://wa.me/5511980327136" },
 ];

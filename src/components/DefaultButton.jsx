@@ -3,6 +3,16 @@ import "./DefaultButton.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const DefaultButton = ({ buttons }) => {
+  const renderIcon = (icon) => {
+    if (typeof icon === "object" && "iconName" in icon) {
+      return <FontAwesomeIcon className="default-icon" icon={icon} />;
+    }
+
+    const LucideIcon = icon;
+    return <LucideIcon className="default-icon-lucide default-icon" icon={icon} />;
+  };
+  console.log(buttons);
+
   return (
     <div>
       {buttons.map((button) => (
@@ -14,7 +24,7 @@ const DefaultButton = ({ buttons }) => {
           target="_blank"
         >
           {button.text}
-          <FontAwesomeIcon className="default-icon" icon={button.icon} />
+          {renderIcon(button.icon)}
         </a>
       ))}
     </div>

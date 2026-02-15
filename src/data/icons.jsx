@@ -1,26 +1,21 @@
-// Regular Icons
+// Default Lucide Icons
 import {
-  faCircleDown,
-  faWindowRestore,
-  faCalendar,
-  faPaperPlane,
-} from "@fortawesome/free-regular-svg-icons";
-
-// Solid Icons
-import {
-  faCode,
-  faArrowUpRightFromSquare,
-  faBriefcase,
-  faLink,
-  faCaretRight,
-  faArrowRight,
-  faArrowLeft,
-  faXmark,
-} from "@fortawesome/free-solid-svg-icons";
+  ArrowBigDownDash,
+  CodeXml,
+  TabletSmartphone,
+  Paintbrush,
+  Calendar,
+  BriefcaseBusiness,
+  ArrowRight,
+  ArrowLeft,
+  Link,
+  ListCollapse,
+  X,
+  Send
+} from "lucide-react";
 
 // Brands Icons
 import {
-  faAndroid,
   faLinkedin,
   faGithub,
   faHtml5,
@@ -38,49 +33,38 @@ import {
   faSass,
 } from "@fortawesome/free-brands-svg-icons";
 
-// Lucide Icons
-import {
-  CloudDownload
-} from "lucide-react"
-
 // Exported Icons
 export const icons = {
-  faCircleDown,
-  faArrowUpRightFromSquare,
-  faLinkedin,
-  faGithub,
-  faLink,
-  faCaretRight,
 
-  faCode,
-  faAndroid,
-  faWindowRestore,
+  download: ArrowBigDownDash,
+  web: CodeXml,
+  mobile: TabletSmartphone,
+  ux: Paintbrush,
+  calendar: Calendar,
+  work: BriefcaseBusiness,
+  go: ArrowRight,
+  back: ArrowLeft,
+  link:Link,
+  details: ListCollapse,
+  close:X,
+  send: Send,
 
-  faBriefcase,
-  faCalendar,
+  linkedin: faLinkedin,
+  github: faGithub,
 
-  faXmark,
-  faArrowRight,
-  faArrowLeft,
-  faHtml5,
-  faCss3Alt,
-  faJs,
-  faPhp,
-  faReact,
+  html: faHtml5,
+  css: faCss3Alt,
+  js: faJs,
+  php: faPhp,
+  react: faReact,
 
-  faNodeJs,
-  faAngular,
-  faPython,
-  faUbuntu,
-  faFigma,
-  faGitAlt,
-  faSass,
+  node: faNodeJs,
+  angular: faAngular,
+  python: faPython,
+  ubuntu: faUbuntu,
+  figma: faFigma,
+  git: faGitAlt,
+  sass: faSass,
 
-  faPaperPlane,
-
-  faWhatsapp,
-
-  // Lucide Export
-  CloudDownload,
-
+  whatsapp: faWhatsapp,
 };

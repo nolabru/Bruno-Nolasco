@@ -2,8 +2,6 @@ import "./Experience.css";
 
 import useScrollReveal from "../hooks/useScrollReveal";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { icons } from "../data/icons";
 
 import DefaultButton from "./DefaultButton";
@@ -34,33 +32,30 @@ const Experience = () => {
           <span className="experience-circle"></span>
           <span className="experience-circle"></span>
         </div>
-        {experience.map((item, i) => (
-          <div
-            key={i}
-            className={`experience-route-box card-exp-reveal ${
-              i === 1 ? "right" : ""
-            }`}
-          >
-            <div className="experience-job">
-              <h3 className="position">
-                <FontAwesomeIcon
-                  className="experience-icon"
-                  icon={icons.faBriefcase}
-                />
-                {item.position}
-              </h3>
-              <p className="company">{item.company}</p>
-              <p className="time">
-                <FontAwesomeIcon
-                  className="experience-icon"
-                  icon={icons.faCalendar}
-                />
-                {item.time}
-              </p>
-              <p className="card-description">{item.description}</p>
+        {experience.map((item, i) => {
+          const WorkIcon = icons.work;
+          const CalendarIcon = icons.calendar;
+          return (
+            <div
+              key={i}
+              className={`experience-route-box card-exp-reveal ${
+                i === 1 ? "right" : ""
+              }`}
+            >
+              <div className="experience-job">
+                <h3 className="position">
+                  <WorkIcon className="work-icon" /> {item.position}
+                </h3>
+                <p className="company">{item.company}</p>
+                <p className="time">
+                  <CalendarIcon className="calendar-icon" />
+                  {item.time}
+                </p>
+                <p className="card-description">{item.description}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
