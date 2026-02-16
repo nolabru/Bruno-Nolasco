@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <section className="footer">
       <p className="copyright">
-        © 2025 Bruno Nolasco. Todos os direitos reservados.
+        © 2026 Bruno Nolasco. Todos os direitos reservados.
       </p>
     </section>
   );

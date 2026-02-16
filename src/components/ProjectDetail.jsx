@@ -34,11 +34,38 @@ const ProjectDetail = ({ selectedProject, closeDetail }) => {
     return "";
   };
 
+  const renderTechIcon = (item, className) => {
+    if (typeof item.icon === "string") {
+      return <i className={`${item.icon} ${className}`} />;
+    }
+
+    if (item.icon && typeof item.icon === "object" && "iconName" in item.icon) {
+      return (
+        <FontAwesomeIcon
+          icon={item.icon}
+          className={className}
+          style={item.color}
+        />
+      );
+    }
+
+    const LucideIcon = item.icon;
+    return <LucideIcon className={className} />;
+  };
+
+  const renderIcon = (icon, className) => {
+    if (icon && typeof icon === "object" && "iconName" in icon) {
+      return <FontAwesomeIcon icon={icon} className={className} />;
+    }
+    const LucideIcon = icon;
+    return <LucideIcon className={`${className}`} />;
+  };
+
   return (
     <div className="project-detail-box">
       <div className="project-detail">
         <button className="close-button" onClick={closeDetail}>
-          <FontAwesomeIcon className="x-icon" icon={icons.faXmark} />
+          {renderIcon(icons.close, "x-icon")}
         </button>
 
         <img className="detail-image" src={selectedProject.background} alt="" />
@@ -56,13 +83,9 @@ const ProjectDetail = ({ selectedProject, closeDetail }) => {
               gridTemplateColumns: `repeat(${selectedProject.tools.length},1fr)`,
             }}
           >
-            {selectedProject.tools.map((tool) => (
-              <div className="tech-item">
-                <FontAwesomeIcon
-                  icon={tool.icon}
-                  className="tech-item-icon"
-                  style={{ color: `${tool.color}` }}
-                />
+            {selectedProject.tools.map((tool, index) => (
+              <div className="tech-item" key={`${tool.language}-${index}`}>
+                {renderTechIcon(tool, "tech-item-icon colored")}
                 <p className="tech-item-tool">{tool.language}</p>
               </div>
             ))}
@@ -81,14 +104,11 @@ const ProjectDetail = ({ selectedProject, closeDetail }) => {
                 }`}
                 target="_blank"
                 className={`default-button projects detail ${isHidden(
-                  button.text
+                  button.text,
                 )}`}
               >
                 {button.text}
-                <FontAwesomeIcon
-                  icon={button.icon}
-                  className="default-icon projects"
-                />
+                {renderIcon(button.icon, "default-icon detail-icon")}
               </a>
             ))}
           </div>

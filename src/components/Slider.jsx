@@ -11,7 +11,7 @@ const Slider = () => {
   const [showDetail, setShowDetail] = useState(false);
 
   const [itemsPerPage, setItemsPerPage] = useState(() =>
-    window.innerWidth <= 980 ? 2 : 4
+    window.innerWidth <= 980 ? 2 : 4,
   );
 
   useEffect(() => {
@@ -88,7 +88,30 @@ const Slider = () => {
 
                     <div className="info-acess">
                       {buttonProjects.map((button, i) => {
+                        const isDevelopment = project.state === "Development";
+
+                        if (
+                          isDevelopment &&
+                          (button.text === "Projeto" ||
+                            button.text === "Repositório")
+                        ) {
+                          return null;
+                        }
+
                         if (button.text === "Detalhes") {
+                          if (isDevelopment) {
+                            return (
+                              <button
+                                key={i}
+                                type="button"
+                                className="default-button projects disabled-project-button"
+                                disabled
+                              >
+                                Em Desenvolvimento
+                              </button>
+                            );
+                          }
+
                           return (
                             <button
                               key={i}
@@ -131,7 +154,7 @@ const Slider = () => {
                             href={dynamicHref}
                             target="_blank"
                             className={`default-button projects ${configState(
-                              button.text
+                              button.text,
                             )}`}
                           >
                             {button.text}

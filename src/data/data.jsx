@@ -22,7 +22,7 @@ export const linkTitle = [
 export const sectionHeaders = [
   {
     title: "Serviços",
-    subtitle: "Transformando suas ideias em experiências digitais",
+    subtitle: "Transformando suas ideias em experiências|digitais",
   },
   {
     title: "Experiência",
@@ -83,7 +83,7 @@ export const services = [
     icon: icons.ux,
     title: "UX/UI Design",
     description:
-      "Interfaces de usuário intuitivas e experiências que encantam, mantendo seus visitantes engajados e satisfeitos.",
+      "Interfaces de usuário intuitivas e experiências|que encantam, mantendo seus visitantes engajados e satisfeitos.",
     data: "100%",
     dataText: "Clientes Satisfeitos",
   },
@@ -117,21 +117,30 @@ export const experience = [
 // Programming Languages
 export const languages = [
   [
-    { icon: icons.faHtml5, language: "HTML", color: "#e34f26" },
-    { icon: icons.faCss3Alt, language: "CSS", color: "#1572b6" },
-    { icon: icons.faJs, language: "JavaScript", color: "#f7df1e" },
-    { icon: icons.faPhp, language: "PHP", color: "#777bb4" },
+    { icon: icons.html, language: "HTML" },
+    { icon: icons.css, language: "CSS" },
+    { icon: icons.js, language: "JavaScript" },
+    { icon: icons.php, language: "PHP" },
   ],
   [
-    { icon: icons.faHtml5, language: "HTML", color: "#e34f26" },
-    { icon: icons.faCss3Alt, language: "CSS", color: "#1572b6" },
-    { icon: icons.faJs, language: "JavaScript", color: "#f7df1e" },
+    { icon: icons.html, language: "HTML" },
+    { icon: icons.css, language: "CSS" },
+    { icon: icons.js, language: "JavaScript" },
   ],
   [
-    { icon: icons.faHtml5, language: "HTML", color: "#e34f26" },
-    { icon: icons.faCss3Alt, language: "CSS", color: "#1572b6" },
-    { icon: icons.faJs, language: "JavaScript", color: "#f7df1e" },
-    { icon: icons.faReact, language: "React", color: "#61dafb" },
+    { icon: icons.flutter, language: "Flutter" },
+    { icon: icons.dart, language: "Dart" },
+  ],
+
+  [
+    { icon: icons.react, language: "React Native" },
+    { icon: icons.expo, language: "ExpoGO" },
+  ],
+
+  [
+    { icon: icons.react, language: "React" },
+    { icon: icons.typescript, language: "Typescript" },
+    { icon: icons.tailwind, language: "Tailwind" },
   ],
 ];
 
@@ -143,74 +152,69 @@ export const projects = [
     hrefProject: "",
     description: "",
     tools: "",
-    state: "Professional",
+    state: "Development",
   },
   {
     background: fastprice,
     title: "Fastprice",
-    hrefProject: "",
-    description: "",
-    tools: "",
+    hrefProject: "https://fastprice.nexabyte.dev/",
+    description:
+      "O FastPrice é um aplicativo de orçamentos inteligentes para marcenaria, focado na criação, gestão e finalização de projetos sob medida. Desenvolvido para a EchoAI, fui o responsável pelo desenvolvimento do aplicativo mobile utilizando Flutter (Dart) com integração via API REST. Atualmente em Fevereiro de 2026 o projeto está em fase de publicação nas lojas oficiais.",
+    tools: languages[2],
     state: "Professional",
   },
   {
     background: aifirst,
     title: "Aifirst",
-    hrefProject: "",
-    description: "",
-    tools: "",
+    hrefProject: "https://aifirst.app/",
+    description:
+      "AI First é uma Plataforma brasileira voltada à criação e gestão de agentes autônomos de IA para empresas. O sistema permite a 'contratação' ou criação de funcionários digitais para áreas como RH, Vendas e Marketing sem a necessidade de código. fui o responsável pelo desenvolvimento do aplicativo mobile utilizando React Native com ExpoGo, Atualmente em Fevereiro de 2026 o projeto está em processo de aprovação nas lojas oficiais.",
+    tools: languages[3],
     state: "Professional",
   },
   {
     background: prontuai,
-    title: "Prontuai",
-    hrefProject: "",
-    description: "",
-    tools: "",
+    title: "ProntuAI",
+    hrefProject: "https://prontuai.developecho.com/",
+    description:
+      "ProntuAI é uma plataforma médica que une gestão de consultório e IA em tempo real, realizando a transcrição de consultas ao vivo e oferecendo suporte diagnóstico automático. Fui responsável pelo desenvolvimento de todo o frontend da aplicação, utilizando React, TypeScript e Tailwind CSS, priorizando a experiência |o usuário e a performance.",
+    tools: languages[4],
     state: "Professional",
   },
   {
     background: calma,
     title: "Calma",
-    hrefProject: "",
-    description: "",
-    tools: "f",
+    hrefProject: "https://apps.apple.com/br/app/calma/id6747729324",
+    description:
+      "C'Alma é um aplicativo de saúde mental e bem-estar emocional que oferece IA conversacional, meditações guiadas e diário emocional, além de outras atividades para o público lusófono. Atuei em todo o ciclo de desenvolvimento, desde a prototipagem no Figma, implementação final em Flutter (Dart) e deploy nas lojas oficiais. O projeto já está disponível para download na App Store e Google Play.",
+    tools: languages[2],
     state: "Professional",
   },
   {
     background: security,
     title: "Ax Security",
-    hrefProject: "",
-    description: "",
-    tools: "",
+    hrefProject: "https://axsecurity.com.br/",
+    description:
+      "Site institucional profissional desenvolvido para a empresa AX Security. Este foi meu primeiro projeto como freelancer, focado em apresentar os serviços de segurança da empresa com uma interface moderna e responsiva.",
+    tools: languages[0],
     state: "Professional",
   },
   {
     background: secretWord,
     title: "Secret Word",
-    hrefProject: "",
-    description: "",
-    tools: "",
-    state: "",
+    hrefProject: "https://nolabru.github.io/Secret-Word/",
+    description:
+      "Secret Word é um projeto interativo que simula um jogo de adivinhação de palavras, inspirado em um projeto do mesmo nome apresentado no curso de React do Matheus Battisti. O foco principal foi o aprimoramento da lógica de programação e a manipulação de estados complexos dentro do ecossistema React.",
+    tools: languages[1],
   },
   {
     background: dachshund,
     title: "Dachshund",
-    hrefProject: "",
-    description: "",
-    tools: "",
-    state: "",
+    hrefProject: "https://nolabru.github.io/Project-Belinha/",
+    description:
+      "Landing page afetiva que narra a história de superação da minha cadelinha, Belinha. Este foi um dos meus primeiros projetos web, essencial para consolidar meus conhecimentos iniciais em HTML, CSS e design responsivo.",
+    tools: languages[1],
   },
-
-  // {
-  //   background: dachshund,
-  //   title: "A História da Belinha",
-  //   hrefProject: "https://nolabru.github.io/Project-Belinha/",
-  //   hrefRepository: "https://github.com/nolabru/Project-Belinha/",
-  //   description:
-  //     "Projeto pessoal dedicado à Belinha, minha cachorrinha, compartilhando sua história de vida e superações. Este foi um dos meus primeiros projetos e tem grande valor sentimental.",
-  //   tools: languages[1],
-  // },
 ];
 
 // Projects Buttons
@@ -229,29 +233,81 @@ export const buttonProjects = [
   },
 ];
 
-export const toolTitle = ["Estudando", "Ferramentas", "Habilidades"];
+export const toolTitle = ["Habilidades", "Ferramentas"];
 
 // My Tools
 export const tools = [
   {
-    icon: icons.angular,
-    category: "Estudando",
-    techDescription: "Angular - 3 Meses de Estudo",
+    icon: icons.flutter,
+    category: "Habilidades",
+    techDescription:
+      "Flutter - 1 Ano de Experiência | 3 Projetos Desenvolvidos",
   },
   {
-    icon: icons.sass,
-    category: "Estudando",
-    techDescription: "Sass - 1 Mês de Estudo",
+    icon: icons.dart,
+    category: "Habilidades",
+    techDescription: "Dart - 1 Ano de Experiência | 3 Projetos Desenvolvidos",
+  },
+  {
+    icon: icons.reactNative,
+    category: "Habilidades",
+    techDescription:
+      "React Native - 1 Ano de Experiência | 1 Projeto Desenvolvido",
+  },
+  {
+    icon: icons.typescript,
+    category: "Habilidades",
+    techDescription:
+      "Typescript - 1 Ano de Experiência | 2 Projetos Desenvolvidos",
+  },
+  {
+    icon: icons.react,
+    category: "Habilidades",
+    techDescription: "React - 2 Anos de Experiência | 4 Projetos Desenvolvidos",
+  },
+  {
+    icon: icons.tailwind,
+    category: "Habilidades",
+    techDescription:
+      "Tailwind - 1 Ano de Experiência | 2 Projetos Desenvolvidos",
+  },
+  {
+    icon: icons.js,
+    category: "Habilidades",
+    techDescription:
+      "Javascript - 4 Anos de Experiência | 5+ Projetos Desenvolvidos",
+  },
+  {
+    icon: icons.html,
+    category: "Habilidades",
+    techDescription:
+      "HTML - 5 Anos de Experiência | 10+ Projetos Desenvolvidos",
+  },
+  {
+    icon: icons.css,
+    category: "Habilidades",
+    techDescription: "CSS - 5 Anos de Experiência | 10+ Projetos Desenvolvidos",
+  },
+  {
+    icon: icons.python,
+    category: "Habilidades",
+    techDescription: "3 Anos de Experiência | 5+ Projetos Desenvolvidos",
+  },
+  {
+    icon: icons.postgree,
+    category: "Habilidades",
+    techDescription:
+      "PostgreSQL - 1 Ano de Experiência | 5 Projetos Desenvolvidos",
   },
   {
     icon: icons.git,
     category: "Ferramentas",
-    techDescription: "Git - 3 Anos de Experiência",
+    techDescription: "Git - 4 Anos de Experiência",
   },
   {
     icon: icons.github,
     category: "Ferramentas",
-    techDescription: "GitHub - 3 Anos de Experiência",
+    techDescription: "Github - 5 Anos de Experiência",
   },
   {
     icon: icons.figma,
@@ -259,39 +315,29 @@ export const tools = [
     techDescription: "Figma - 2 Anos de Experiência",
   },
   {
-    icon: icons.ubuntu,
+    icon: icons.googleCloud,
     category: "Ferramentas",
-    techDescription: "Ubuntu - 1 Ano de Experiência",
+    techDescription: "Google Cloud - 1 Ano de Experiência",
   },
   {
-    icon: icons.html,
-    category: "Habilidades",
-    techDescription: "HTML5 - 4 Anos de Experiência",
+    icon: icons.xcode,
+    category: "Ferramentas",
+    techDescription: "Xcode - 1 Ano de Experiência",
   },
   {
-    icon: icons.css,
-    category: "Habilidades",
-    techDescription: "CSS3 - 4 Anos de Experiência",
+    icon: icons.androidStudio,
+    category: "Ferramentas",
+    techDescription: "Android Studio - 2 Anos de Experiência",
   },
   {
-    icon: icons.js,
-    category: "Habilidades",
-    techDescription: "JavaScript - 3 Anos de Experiência",
+    icon: icons.supabase,
+    category: "Ferramentas",
+    techDescription: "Supabase - 1 Ano de Experiência",
   },
   {
-    icon: icons.react,
-    category: "Habilidades",
-    techDescription: "ReactJs - 1 Ano de Experiência",
-  },
-  {
-    icon: icons.node,
-    category: "Habilidades",
-    techDescription: "NodeJs - 1 Ano de Experiência",
-  },
-  {
-    icon: icons.python,
-    category: "Habilidades",
-    techDescription: "Python - 4 Anos de Experiência",
+    icon: icons.insomnia,
+    category: "Ferramentas",
+    techDescription: "Insomnia - 2 Anos de Experiência",
   },
 ];
 

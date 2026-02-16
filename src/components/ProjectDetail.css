@@ -22,20 +22,28 @@
   width: 35px;
   height: 35px;
   position: absolute;
-  background: var(--detail-color);
+  background: #00000056;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   top: 10px;
   right: 10px;
-  border-radius: var(--secondary-border-radius);
+  border-radius: 30px;
   cursor: pointer;
 }
 
 .x-icon {
-  font-size: var(--projects-title-font-size);
+  width: var(--projects-title-font-size);
+  height: var(--projects-title-font-size);
   color: var(--title-color);
   transition: var(--default-transition);
+}
+
+.detail-icon{
+  width: 16px;
+  height: 14px;
+  padding: 0;
 }
 
 .close-button:hover .x-icon {

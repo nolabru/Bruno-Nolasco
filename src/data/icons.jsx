@@ -11,31 +11,18 @@ import {
   Link,
   ListCollapse,
   X,
-  Send
+  Send,
 } from "lucide-react";
 
 // Brands Icons
 import {
   faLinkedin,
   faGithub,
-  faHtml5,
-  faCss3Alt,
-  faJs,
-  faPhp,
-  faReact,
-  faPython,
-  faNodeJs,
-  faUbuntu,
-  faAngular,
   faWhatsapp,
-  faFigma,
-  faGitAlt,
-  faSass,
 } from "@fortawesome/free-brands-svg-icons";
 
 // Exported Icons
 export const icons = {
-
   download: ArrowBigDownDash,
   web: CodeXml,
   mobile: TabletSmartphone,
@@ -44,27 +31,37 @@ export const icons = {
   work: BriefcaseBusiness,
   go: ArrowRight,
   back: ArrowLeft,
-  link:Link,
+  link: Link,
   details: ListCollapse,
-  close:X,
+  close: X,
   send: Send,
 
   linkedin: faLinkedin,
   github: faGithub,
-
-  html: faHtml5,
-  css: faCss3Alt,
-  js: faJs,
-  php: faPhp,
-  react: faReact,
-
-  node: faNodeJs,
-  angular: faAngular,
-  python: faPython,
-  ubuntu: faUbuntu,
-  figma: faFigma,
-  git: faGitAlt,
-  sass: faSass,
-
   whatsapp: faWhatsapp,
+
+  html: "devicon-html5-plain",
+  css: "devicon-css3-plain",
+  js: "devicon-javascript-plain",
+  react: "devicon-react-original",
+  tailwind: "devicon-tailwindcss-original",
+
+  flutter: "devicon-flutter-plain",
+  reactNative: "devicon-reactnative-original-wordmark",
+  expo: "devicon-expo-original",
+  dart: "devicon-dart-plain",
+
+  php: "devicon-php-plain",
+  postgree: "devicon-postgresql-plain-wordmark",
+  python: "devicon-python-plain",
+  typescript: "devicon-typescript-plain",
+
+  git: "devicon-git-plain",
+  github: "devicon-github-original",
+  figma: "devicon-figma-plain",
+  supabase: "devicon-supabase-plain",
+  insomnia: "devicon-insomnia-plain",
+  androidStudio: "devicon-androidstudio-plain",
+  xcode: "devicon-xcode-plain",
+  googleCloud: "devicon-googlecloud-plain",
 };

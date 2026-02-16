@@ -48,7 +48,7 @@
   font-weight: var(--bold-font-weight);
 }
 
-.tool-icon {
+.language-icon {
   font-size: var(--normal-font-size);
   min-width: 50px;
   color: var(--primary-color);
@@ -66,8 +66,7 @@
     height: 98px;
   }
 
-  .tool-icon {
+  .language-icon {
     font-size: var(--medium-font-size);
-    color: var(--primary-color);
   }
 }

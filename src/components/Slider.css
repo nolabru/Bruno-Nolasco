@@ -95,6 +95,20 @@
   border-radius: var(--secondary-border-radius);
   flex-shrink: 1;
   flex-grow: 1;
+  padding: 10px 15px;
+}
+
+.default-button.projects.disabled-project-button {
+  opacity: 0.6;
+  cursor: not-allowed;
+  border-color: var(--detail-color);
+  color: var(--text-color);
+  cursor: auto;
+}
+
+.default-button.projects.disabled-project-button:hover {
+  border-color: var(--detail-color);
+  color: var(--text-color);
 }
 
 .default-icon.projects {

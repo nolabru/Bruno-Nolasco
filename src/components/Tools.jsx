@@ -26,6 +26,23 @@ const Tools = () => {
     setSubtitle(originalSubtitle);
   };
 
+  const renderToolIcon = (language, classname) => {
+    if (typeof language.icon === "string") {
+      return <i className={`${language.icon} ${classname}`} />;
+    }
+
+    if (
+      language.icon &&
+      typeof language.icon === "object" &&
+      "iconName" in language.icon
+    ) {
+      return <FontAwesomeIcon icon={language.icon} className={classname} />;
+    }
+
+    const LucideIcon = language.icon;
+    return <LucideIcon className={classname} />;
+  };
+
   return (
     <section id="Habilidades" className="tools scr-mt">
       <span className="square two"></span>
@@ -46,7 +63,7 @@ const Tools = () => {
                   key={i}
                   className="tool-card cards-tools-reveal"
                 >
-                  <FontAwesomeIcon icon={tool.icon} className="tool-icon" />
+                  {renderToolIcon(tool, "language-icon")}
                 </div>
               ))}
           </div>
