@@ -28,7 +28,7 @@ const Form = () => {
         "service_p7xrr3t",
         "template_vccpk9p",
         templateParams,
-        "52ayMjkEqE7F7yOsq"
+        "52ayMjkEqE7F7yOsq",
       )
       .then((response) => {
         console.log("Email Enviado", response.status);
@@ -41,7 +41,7 @@ const Form = () => {
       .catch((error) => {
         console.error("Erro ao enviar o e-mail:", error);
         setFeedbackMessage(
-          "Erro ao enviar a mensagem. Tente novamente mais tarde."
+          "Erro ao enviar a mensagem. Tente novamente mais tarde.",
         );
       });
   };
@@ -97,7 +97,7 @@ const Form = () => {
 
       <div className="default-button form">
         <input className="submit-input" type="submit" value="Enviar Mensagem" />
-        <FontAwesomeIcon className="default-icon" icon={icons.faPaperPlane} />
+        <FontAwesomeIcon className="default-icon" icon={icons.sendMail} />
       </div>
 
       {feedbackMessage && <p className="feedback-message">{feedbackMessage}</p>}

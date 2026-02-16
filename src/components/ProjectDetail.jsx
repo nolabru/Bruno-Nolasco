@@ -103,6 +103,7 @@ const ProjectDetail = ({ selectedProject, closeDetail }) => {
                     : selectedProject.hrefRepository
                 }`}
                 target="_blank"
+                rel="noopener noreferrer"
                 className={`default-button projects detail ${isHidden(
                   button.text,
                 )}`}

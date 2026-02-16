@@ -153,6 +153,7 @@ const Slider = () => {
                             key={i}
                             href={dynamicHref}
                             target="_blank"
+                            rel="noopener noreferrer"
                             className={`default-button projects ${configState(
                               button.text,
                             )}`}

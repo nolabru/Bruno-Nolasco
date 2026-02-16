@@ -21,6 +21,8 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
+import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
+
 // Exported Icons
 export const icons = {
   download: ArrowBigDownDash,
@@ -39,6 +41,7 @@ export const icons = {
   linkedin: faLinkedin,
   github: faGithub,
   whatsapp: faWhatsapp,
+  sendMail: faPaperPlane,
 
   html: "devicon-html5-plain",
   css: "devicon-css3-plain",
@@ -57,7 +60,6 @@ export const icons = {
   typescript: "devicon-typescript-plain",
 
   git: "devicon-git-plain",
-  github: "devicon-github-original",
   figma: "devicon-figma-plain",
   supabase: "devicon-supabase-plain",
   insomnia: "devicon-insomnia-plain",

@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 
 const useScrollReveal = (selector, config = {}) => {
+  const configKey = JSON.stringify(config);
+
   useEffect(() => {
     ScrollReveal().reveal(selector, {
       distance: "50px",
@@ -12,7 +14,7 @@ const useScrollReveal = (selector, config = {}) => {
       reset: false,
       ...config,
     });
-  }, [selector, config]);
+  }, [selector, configKey]);
 };
 
 export default useScrollReveal;

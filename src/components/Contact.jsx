@@ -9,7 +9,7 @@ import { socialLinks } from "../data/data";
 import Form from "./Form";
 
 const Contact = () => {
-  useScrollReveal(".contact-box-reveal"), { delay: 500 };
+  (useScrollReveal(".contact-box-reveal"), { delay: 500 });
 
   return (
     <section id="Contato" className="contact contact-box-reveal">
@@ -23,7 +23,12 @@ const Contact = () => {
           </p>
           <div className="social-media">
             {socialLinks.map((link) => (
-              <a className="social-media-link" href={link.href} target="_blank">
+              <a
+                className="social-media-link"
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon
                   className="social-media-link-icon"
                   icon={link.icon}

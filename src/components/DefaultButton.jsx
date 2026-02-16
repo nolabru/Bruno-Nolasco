@@ -9,7 +9,9 @@ const DefaultButton = ({ buttons }) => {
     }
 
     const LucideIcon = icon;
-    return <LucideIcon className="default-icon-lucide default-icon" icon={icon} />;
+    return (
+      <LucideIcon className="default-icon-lucide default-icon" icon={icon} />
+    );
   };
   console.log(buttons);
 
@@ -22,6 +24,7 @@ const DefaultButton = ({ buttons }) => {
           href={button.href}
           download={button.href.endsWith(".pdf")}
           target="_blank"
+          rel="noopener noreferrer"
         >
           {button.text}
           {renderIcon(button.icon)}
