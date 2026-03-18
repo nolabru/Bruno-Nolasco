@@ -16,11 +16,12 @@ const Presentation = () => {
       <div className="about-me presentation-top-reveal">
         <h2 className="about-text subtitle">Olá, eu sou o</h2>
         <h1 className="about-text name">Bruno Nolasco</h1>
-        <h3 className="about-text work">Mobile & Frontend Software Engineer</h3>
+        <h3 className="about-text work">Frontend & Mobile Software Engineer</h3>
         <p className="about-description">
-          Desenvolvedor Mobile Pleno com foco em Flutter & Dart, com forte experiência
-          na integração de IA generativa, aplicando inteligência artificial na
-          resolução de problemas reais.
+          Desenvolvedor Frontend & Mobile Pleno com foco em React, Next.js e
+          React Native, com experiência prática em integrar IA generativa para
+          soluções reais. Também atuo com Flutter & Dart, criando aplicações
+          escaláveis e interativas.
         </p>
         <DefaultButton buttons={[textButtons[0]]} />
       </div>
