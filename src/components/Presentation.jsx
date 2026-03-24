@@ -18,12 +18,12 @@ const Presentation = () => {
         <h1 className="about-text name">Bruno Nolasco</h1>
         <h3 className="about-text work">Frontend & Mobile Software Engineer</h3>
         <p className="about-description">
-          Desenvolvedor Frontend & Mobile Pleno com foco em React, Next.js e
-          React Native, com experiência prática em integrar IA generativa para
+          Desenvolvedor Frontend & Mobile Pleno com foco em React, Typescript, Next.js e
+          React Native(Expo). Com experiência prática em integrar IA generativa para
           soluções reais. Também atuo com Flutter & Dart, criando aplicações
           escaláveis e interativas.
         </p>
-        <DefaultButton buttons={[textButtons[0]]} />
+        <DefaultButton buttons={[textButtons[1]]} />
       </div>
     </section>
   );

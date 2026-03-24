@@ -47,6 +47,7 @@ export const icons = {
   css: "devicon-css3-plain",
   js: "devicon-javascript-plain",
   react: "devicon-react-original",
+  next: "devicon-nextjs-plain",
   tailwind: "devicon-tailwindcss-original",
 
   flutter: "devicon-flutter-plain",

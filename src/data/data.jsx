@@ -238,106 +238,113 @@ export const toolTitle = ["Habilidades", "Ferramentas"];
 // My Tools
 export const tools = [
   {
-    icon: icons.flutter,
+    icon: icons.react,
     category: "Habilidades",
-    techDescription:
-      "Flutter - 1 Ano de Experiência | 3 Projetos Desenvolvidos",
-  },
-  {
-    icon: icons.dart,
-    category: "Habilidades",
-    techDescription: "Dart - 1 Ano de Experiência | 3 Projetos Desenvolvidos",
-  },
-  {
-    icon: icons.reactNative,
-    category: "Habilidades",
-    techDescription:
-      "React Native - 1 Ano de Experiência | 1 Projeto Desenvolvido",
+    techDescription: "React",
   },
   {
     icon: icons.typescript,
     category: "Habilidades",
     techDescription:
-      "Typescript - 1 Ano de Experiência | 2 Projetos Desenvolvidos",
+      "Typescript",
   },
   {
-    icon: icons.react,
+    icon: icons.next,
     category: "Habilidades",
-    techDescription: "React - 2 Anos de Experiência | 4 Projetos Desenvolvidos",
+    techDescription:
+      "Next.js",
   },
   {
     icon: icons.tailwind,
     category: "Habilidades",
     techDescription:
-      "Tailwind - 1 Ano de Experiência | 2 Projetos Desenvolvidos",
+      "Tailwind CSS",
   },
+  {
+    icon: icons.reactNative,
+    category: "Habilidades",
+    techDescription:
+      "React Native",
+  },
+  {
+    icon: icons.flutter,
+    category: "Habilidades",
+    techDescription:
+      "Flutter ",
+  },
+  {
+    icon: icons.dart,
+    category: "Habilidades",
+    techDescription: "Dart",
+  },
+
   {
     icon: icons.js,
     category: "Habilidades",
     techDescription:
-      "Javascript - 4 Anos de Experiência | 5+ Projetos Desenvolvidos",
+      "Javascript",
   },
   {
     icon: icons.html,
     category: "Habilidades",
     techDescription:
-      "HTML - 5 Anos de Experiência | 10+ Projetos Desenvolvidos",
+      "HTML",
   },
   {
     icon: icons.css,
     category: "Habilidades",
-    techDescription: "CSS - 5 Anos de Experiência | 10+ Projetos Desenvolvidos",
+    techDescription: "CSS",
   },
   {
     icon: icons.python,
     category: "Habilidades",
-    techDescription: "3 Anos de Experiência | 5+ Projetos Desenvolvidos",
+    techDescription: "Python",
   },
   {
     icon: icons.postgree,
     category: "Habilidades",
     techDescription:
-      "PostgreSQL - 1 Ano de Experiência | 5 Projetos Desenvolvidos",
+      "PostgreSQL",
   },
   {
     icon: icons.git,
     category: "Ferramentas",
-    techDescription: "Git - 4 Anos de Experiência",
+    techDescription: "Git",
   },
   {
     icon: icons.github,
     category: "Ferramentas",
-    techDescription: "Github - 5 Anos de Experiência",
+    techDescription: "Github",
   },
   {
     icon: icons.figma,
     category: "Ferramentas",
-    techDescription: "Figma - 2 Anos de Experiência",
+    techDescription: "Figma",
   },
   {
     icon: icons.googleCloud,
     category: "Ferramentas",
-    techDescription: "Google Cloud - 1 Ano de Experiência",
+    techDescription: "Google Cloud",
   },
   {
     icon: icons.xcode,
     category: "Ferramentas",
-    techDescription: "Xcode - 1 Ano de Experiência",
+    techDescription: "Xcode",
   },
   {
     icon: icons.androidStudio,
     category: "Ferramentas",
-    techDescription: "Android Studio - 2 Anos de Experiência",
+    techDescription: "Android Studio",
   },
   {
     icon: icons.supabase,
     category: "Ferramentas",
-    techDescription: "Supabase - 1 Ano de Experiência",
+    techDescription: "Supabase",
   },
   {
     icon: icons.insomnia,
     category: "Ferramentas",
-    techDescription: "Insomnia - 2 Anos de Experiência",
+    techDescription: "Insomnia",
   },
 ];
 
